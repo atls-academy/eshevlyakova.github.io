@@ -1,7 +1,7 @@
 {
   "name": "template",
-  "license": "BSD 3-Clause",
   "private": true,
+  "license": "BSD 3-Clause",
   "devDependencies": {
     "@atls/code-service": "^0.0.15",
     "@atls/config-jest": "^0.0.4",
