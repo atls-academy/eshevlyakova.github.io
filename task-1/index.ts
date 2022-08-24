@@ -8,7 +8,7 @@ let activeUser: ActiveUser = {
   authorized: false,
 }
 
-const credentials: object[] = []
+const credentials: ActiveUser[] = []
 
 const register = (username: string, password: string): void => {
   try {
