@@ -1,0 +1,11 @@
+{
+  "name": "@eshevlyakova.github.io/first-task",
+  "private": true,
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "yarn service build",
+    "dev": "yarn service dev",
+    "start": "node dist/index.js"
+  }
+}
