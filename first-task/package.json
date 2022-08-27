@@ -1,5 +1,5 @@
 {
-  "name": "first-task",
+  "name": "@first-task/main",
   "version": "0.0.1",
   "main": "src/index.ts",
   "scripts": {
