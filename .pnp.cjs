@@ -19,11 +19,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "template",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "@first-task/main",\
+        "reference": "workspace:first-task"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@first-task/main", ["workspace:first-task"]],\
       ["template", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -1178,6 +1183,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["strip-json-comments", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@first-task/main", [\
+        ["workspace:first-task", {\
+          "packageLocation": "./first-task/",\
+          "packageDependencies": [\
+            ["@first-task/main", "workspace:first-task"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@gar/promisify", [\
