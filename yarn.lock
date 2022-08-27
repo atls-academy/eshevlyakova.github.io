@@ -3350,6 +3350,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"first-task@workspace:first-task":
+  version: 0.0.0-use.local
+  resolution: "first-task@workspace:first-task"
+  languageName: unknown
+  linkType: soft
+
 "flat-cache@npm:^3.0.4":
   version: 3.0.4
   resolution: "flat-cache@npm:3.0.4"

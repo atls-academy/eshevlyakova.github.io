@@ -19,11 +19,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "template",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "first-task",\
+        "reference": "workspace:first-task"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["first-task", ["workspace:first-task"]],\
       ["template", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -4481,6 +4486,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-exists", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["first-task", [\
+        ["workspace:first-task", {\
+          "packageLocation": "./first-task/",\
+          "packageDependencies": [\
+            ["first-task", "workspace:first-task"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["flat-cache", [\

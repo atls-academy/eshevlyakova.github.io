@@ -95,13 +95,4 @@ const logout = (): void => {
   }
 }
 
-register('Николай', '123')
 register('Николай', '123456')
-login('Василий', '2022')
-logout()
-whoami()
-login('Василий', '2022')
-logout()
-logout()
-console.log(credentials[0])
-console.log(credentials[1])
