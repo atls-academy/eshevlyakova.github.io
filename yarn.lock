@@ -1434,6 +1434,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/app@workspace:landing/app"
   dependencies:
+    "@landing/index-page": 0.0.1
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
     next: ^12.1.0
@@ -1443,7 +1444,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@landing/index-page@workspace:landing/pages/index-page":
+"@landing/index-page@0.0.1, @landing/index-page@workspace:landing/pages/index-page":
   version: 0.0.0-use.local
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
