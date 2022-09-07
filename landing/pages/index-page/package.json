@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
+    "@landing/banner-fragment": "0.0.1",
     "@landing/header-fragment": "0.0.1",
     "@ui/image": "workspace:0.0.1",
     "next": "^12.1.0",

@@ -1,4 +1,1 @@
-export * from './reviews.component'
-
-export class HeaderBlock {
-}
+export * from './header.component'
