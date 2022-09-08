@@ -15,8 +15,7 @@ export const GlobalStyles = () => {
   return (
     <Global
       styles={css`
-        @import url('https://fonts.googleapis.com/css2?family=Inter');
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond');
+        @import url('http://fonts.cdnfonts.com/css/helvetica-2');
 
         html,
         body,
@@ -24,6 +23,40 @@ export const GlobalStyles = () => {
           margin: 0;
           -webkit-font-smoothing: antialiased;
           -webkit-overflow-scrolling: touch;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        body {
+          font-family: 'Helvetica', sans-serif;
+        }
+        ul,
+        ol {
+            padding: 0;
+        }
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul,
+        ol,
+        li,
+        figure,
+        figcaption,
+        blockquote,
+        dl,
+        dd {
+            margin: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            display: block;
         }
 
         #__next {
