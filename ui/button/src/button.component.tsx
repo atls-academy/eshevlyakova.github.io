@@ -1,8 +1,7 @@
 import styled               from '@emotion/styled'
 import { Content }          from '@atls-ui-parts/button'
 
-import React                from 'react'
-import { FC }               from 'react'
+import React, { PropsWithChildren }   from 'react'
 import { layout }           from 'styled-system'
 import { space }            from 'styled-system'
 
@@ -26,7 +25,7 @@ export const ButtonElement = styled.button<any>(
   space
 )
 
-export const Button: FC<ButtonProps> = ({
+export const Button: PropsWithChildren<ButtonProps> = ({
   success = false,
   failure = false,
   divider = 12,

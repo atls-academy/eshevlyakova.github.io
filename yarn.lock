@@ -842,7 +842,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/css@npm:^11.9.0":
+"@emotion/css@npm:^11.10.0, @emotion/css@npm:^11.9.0":
   version: 11.10.0
   resolution: "@emotion/css@npm:11.10.0"
   dependencies:
@@ -3983,7 +3983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2":
+"csstype@npm:^3.0.2, csstype@npm:^3.1.0":
   version: 3.1.0
   resolution: "csstype@npm:3.1.0"
   checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
@@ -7584,12 +7584,14 @@ __metadata:
   dependencies:
     "@atls/code-service": ^0.0.16
     "@atls/config-jest": ^0.0.5
+    "@emotion/css": ^11.10.0
     "@jest/core": ^28.1.2
     "@types/eslint": ^8
     "@types/jest": ^28.1.3
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
     "@types/react-dom": ^17.0.9
+    csstype: ^3.1.0
     eslint: 8.18.0
     husky: ^8.0.1
     typescript: ^4.8.2
