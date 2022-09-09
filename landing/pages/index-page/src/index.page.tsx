@@ -1,22 +1,19 @@
-import React, { Component } from "react";
-import { HeaderBlock } from '@landing/header-fragment';
-import { SectionBanner } from '@landing/banner-fragment';
+import React             from 'react'
 
-function Main() {
-      return(<main>
-        <SectionBanner/>
-      </main>)
-}
+import { SectionBanner } from '@landing/banner-fragment'
+import { HeaderBlock }   from '@landing/header-fragment'
 
-class HomePage extends Component<any, any> {
-  state = {};
-  render() {
-    return(<>
-      <HeaderBlock/>
-      <Main/>
-    </>)
-  }
-}
+const Main = () => (
+  <main>
+    <SectionBanner />
+  </main>
+)
 
+export const HomePage = () => (
+  <>
+    <HeaderBlock />
+    <Main />
+  </>
+)
 
 export default HomePage

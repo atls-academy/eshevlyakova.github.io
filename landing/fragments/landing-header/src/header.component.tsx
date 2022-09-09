@@ -1,8 +1,8 @@
-import React from 'react';
+import styled   from '@emotion/styled'
 
-import Link from 'next/link';
-import { Image } from '@ui/image';
-import styled from '@emotion/styled';
+import React    from 'react'
+
+import { Logo } from '@ui/logo'
 
 const HeaderBlock = () => {
   const StyledHeader = styled.header`
@@ -22,11 +22,17 @@ const HeaderBlock = () => {
     }
 `
   const HeaderLogo = styled.div`
-    width: 40px;
-    height: 40px;
+    @media (max-width: 1550px) {
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
     @media (max-width: 1070px) {
-      width: 36px;
-      height: 36px;
+     svg{
+       width: 36px;
+       height: 36px;
+     }
     }
 `
   const Container = styled.div`
@@ -49,22 +55,14 @@ const HeaderBlock = () => {
       max-width: 375px;
     }
 `
-  return(<StyledHeader>
-    <HeaderLogo>
-      <Link href="/">
-        <a>
-          <Image
-            alt="Логотип академии"
-            src="https://svgshare.com/i/mRJ.svg"
-            contain
-          />
-        </a>
-      </Link>
-    </HeaderLogo>
-    <Container>
-
-    </Container>
-  </StyledHeader>);
+  return (
+    <StyledHeader>
+      <HeaderLogo>
+        <Logo />
+      </HeaderLogo>
+      <Container />
+    </StyledHeader>
+  )
 }
 
 export { HeaderBlock }

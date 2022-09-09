@@ -1,7 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import { Image } from '@ui/image';
-import styled from '@emotion/styled';
+import styled    from '@emotion/styled'
+
+import React     from 'react'
+
+import { Image } from '@ui/image'
 
 const SectionBanner = () => {
   const Banner = styled.section`
@@ -227,52 +228,37 @@ const SectionBanner = () => {
     }
   `
 
-  return(
+  return (
     <Banner>
-    <BannerNetworks>
-        <Link href="#">
-          <a target = "_blank">
-            <Image
-              alt="Логотип telegram"
-              src="https://svgshare.com/i/mQT.svg"
-              contain
-            />
-          </a>
-        </Link>
-        <Link href="https://github.com/atls-academy">
-          <a target = "_blank">
-            <Image
-              alt="Логотип github"
-              src="https://svgshare.com/i/mSh.svg"
-              contain
-            />
-          </a>
-        </Link>
-        <Link href="mailto:me@atls.academy">
-          <a target = "_blank">
-            <Image
-              alt="Иконка письма"
-              src="https://svgshare.com/i/mSB.svg"
-              contain
-            />
-          </a>
-        </Link>
-    </BannerNetworks>
-    <Container>
-      <BannerTitle>Обучаем <br/>профессионалов <br/>для революции в <span>it</span>
-      </BannerTitle>
-      <BannerText>
-        <p>Мы не учим программированию и дизайну, мы учим мышлению <br/>способному релизовывывать невозможные идеи.</p>
-        <BannerTextBtn>
-          <Image
-            alt="Иконка компьютерной мышки"
-            src="https://svgshare.com/i/mRe.svg"
-          />
-        </BannerTextBtn>
-      </BannerText>
-    </Container>
-  </Banner>
-)
+      <BannerNetworks>
+        <a href='https://telegram.org/' target='_blank' rel='noreferrer'>
+          <Image alt='Логотип telegram' src='https://svgshare.com/i/mQT.svg' contain />
+        </a>
+        <a href='https://github.com/atls-academy' target='_blank' rel='noreferrer'>
+          <Image alt='Логотип github' src='https://svgshare.com/i/mSh.svg' contain />
+        </a>
+        <a href='mailto:me@atls.academy' target='_blank' rel='noreferrer'>
+          <Image alt='Иконка письма' src='https://svgshare.com/i/mSB.svg' contain />
+        </a>
+      </BannerNetworks>
+      <Container>
+        <BannerTitle>
+          Обучаем <br />
+          профессионалов <br />
+          для революции в <span>it</span>
+        </BannerTitle>
+        <BannerText>
+          <p>
+            Мы не учим программированию и дизайну, мы учим мышлению <br />
+            способному релизовывывать невозможные идеи.
+          </p>
+          <BannerTextBtn>
+            <Image alt='Иконка компьютерной мышки' src='https://svgshare.com/i/mRe.svg' />
+          </BannerTextBtn>
+        </BannerText>
+      </Container>
+    </Banner>
+  )
 }
 
 export { SectionBanner }
