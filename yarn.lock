@@ -2025,7 +2025,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
+"@ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -2076,7 +2076,6 @@ __metadata:
     "@emotion/react": ^11.9.3
     "@emotion/styled": ^11.9.3
     "@types/styled-system": ^5
-    "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace:0.0.1"
     next: 12.1.0
     react: ^17.0.2
