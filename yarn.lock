@@ -55,6 +55,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-parts/button@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@atls-ui-parts/button@npm:0.0.4"
+  dependencies:
+    "@atls-ui-parts/styles": 0.0.1
+  peerDependencies:
+    "@emotion/styled": ^11.1.5
+    react: ^17.0.1
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  checksum: f6ed83e8abeea46b87f15ee503bcabf6067fa99a981ee0a1d83afcd344384aff471b61ffcbba7c9f5da40a8de83d1f66de9a8e189d759c5e2ae66878b517e3aa
+  languageName: node
+  linkType: hard
+
 "@atls-ui-parts/layout@npm:^0.0.7":
   version: 0.0.7
   resolution: "@atls-ui-parts/layout@npm:0.0.7"
@@ -79,6 +93,15 @@ __metadata:
     react: ^17.0.1
     styled-system: ^5.1.5
   checksum: e6220f3e6d068443766af3f26a3022c87e2518f0a6f2a0aae9c7419d3e2519023daf60756ea4372b553da5471b2d78dad80672ff9ae5170c3b31ee75f341ef10
+  languageName: node
+  linkType: hard
+
+"@atls-ui-parts/styles@npm:0.0.1":
+  version: 0.0.1
+  resolution: "@atls-ui-parts/styles@npm:0.0.1"
+  peerDependencies:
+    styled-system: ^5.1.5
+  checksum: 06a333d67bd87ec26ceb21bc48a670365fe93789e5bec457a9a389a679345693d4bf34d1557c8668c8c9a6495cddf5d38a2dedd610c3310a19f97ef72bb8f5d0
   languageName: node
   linkType: hard
 
@@ -971,35 +994,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@globals/data@workspace:0.0.1, @globals/data@workspace:globals/data":
-  version: 0.0.0-use.local
-  resolution: "@globals/data@workspace:globals/data"
-  dependencies:
-    "@apollo/client": ^3.6.9
-    graphql: ^15.5.1
-    react: ^17.0.2
-  peerDependencies:
-    "@apollo/client": "*"
-    react: "*"
-  languageName: unknown
-  linkType: soft
-
-"@globals/language@workspace:globals/language":
-  version: 0.0.0-use.local
-  resolution: "@globals/language@workspace:globals/language"
-  dependencies:
-    react: ^17.0.2
-  peerDependencies:
-    react: "*"
-  languageName: unknown
-  linkType: soft
-
-"@globals/messages@workspace:globals/messages":
-  version: 0.0.0-use.local
-  resolution: "@globals/messages@workspace:globals/messages"
-  languageName: unknown
-  linkType: soft
-
 "@graphql-typed-document-node/core@npm:^3.1.1":
   version: 3.1.1
   resolution: "@graphql-typed-document-node/core@npm:3.1.1"
@@ -1345,7 +1339,6 @@ __metadata:
   resolution: "@landing/app@workspace:landing/app"
   dependencies:
     "@apollo/client": ^3.6.9
-    "@globals/data": "workspace:0.0.1"
     "@landing/index-page": 0.0.1
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
@@ -1364,10 +1357,13 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.9.3
     "@emotion/styled": ^11.9.3
-    "@landing/header-fragment": 0.0.1
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
+    "@ui/button": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/social-links": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
     next: ^12.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -1391,6 +1387,7 @@ __metadata:
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
     "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/logo": "workspace:0.0.1"
     next: ^12.1.0
     react: ^17.0.2
@@ -2006,6 +2003,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ui/button@workspace:0.0.1, @ui/button@workspace:ui/button":
+  version: 0.0.0-use.local
+  resolution: "@ui/button@workspace:ui/button"
+  dependencies:
+    "@atls-ui-parts/button": ^0.0.4
+    "@emotion/react": ^11.9.3
+    "@emotion/styled": ^11.9.3
+    "@types/react": ^17
+    "@types/react-dom": ^17
+    react: ^17
+    react-dom: ^17
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ui/image@workspace:0.0.1, @ui/image@workspace:ui/image":
   version: 0.0.0-use.local
   resolution: "@ui/image@workspace:ui/image"
@@ -2025,7 +2043,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/layout@workspace:ui/layout":
+"@ui/layout@workspace:0.0.1, @ui/layout@workspace:ui/layout":
   version: 0.0.0-use.local
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
@@ -2088,6 +2106,22 @@ __metadata:
     react: "*"
     react-dom: "*"
     styled-system: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/social-links@workspace:0.0.1, @ui/social-links@workspace:ui/social-links":
+  version: 0.0.0-use.local
+  resolution: "@ui/social-links@workspace:ui/social-links"
+  dependencies:
+    "@ui/button": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/link": "workspace:0.0.1"
+    react: ^17.0.2
+    react-dom: ^17.0.2
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
@@ -4362,7 +4396,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^15.5.1, graphql@npm:^15.8.0":
+"graphql@npm:^15.8.0":
   version: 15.8.0
   resolution: "graphql@npm:15.8.0"
   checksum: 423325271db8858428641b9aca01699283d1fe5b40ef6d4ac622569ecca927019fce8196208b91dd1d8eb8114f00263fe661d241d0eb40c10e5bfd650f86ec5e
@@ -6803,7 +6837,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-tools@npm:^1.7.1":
+"styled-tools@npm:^1.7.1, styled-tools@npm:^1.7.2":
   version: 1.7.2
   resolution: "styled-tools@npm:1.7.2"
   checksum: 00cc1796085589b8d95d5a4183806d45b1d332fbc1dcf19922b01b81bd871c5a499fce64e82bb63bbead5bb8fe317f60a6e91c2fe01bf1ed79f5953977a05065

@@ -1,7 +1,5 @@
 const fonts = {
-  primary: 'Inter',
-  // TODO load
-  secondary: 'Cormorant Garamond',
+  primary: 'Helvetica'
 }
 
 export { fonts }

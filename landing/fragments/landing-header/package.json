@@ -5,6 +5,7 @@
   "dependencies": {
     "@landing/header-fragment": "0.0.1",
     "@ui/image": "workspace:0.0.1",
+    "@ui/layout": "workspace:0.0.1",
     "@ui/logo": "workspace:0.0.1",
     "next": "^12.1.0",
     "react": "^17.0.2",

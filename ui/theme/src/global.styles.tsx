@@ -30,7 +30,7 @@ export const GlobalStyles = () => {
             box-sizing: border-box;
         }
         body {
-          font-family: 'Helvetica', sans-serif;
+          font-family: "primary", sans-serif;
         }
         ul,
         ol {

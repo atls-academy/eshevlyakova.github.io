@@ -15,7 +15,6 @@
     "typescript": "^4.3.5"
   },
   "devDependencies": {
-    "@globals/data": "workspace:0.0.1",
     "@types/node": "^18.7.14",
     "@types/react": "18.0.1",
     "@ui/theme": "workspace:0.0.1"
