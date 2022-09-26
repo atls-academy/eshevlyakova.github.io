@@ -146,7 +146,7 @@ export const GlobalStyles = () => {
           height: 40px;
           background-color: white;
           border-radius: 100px;
-          font-family: ${theme.fonts.secondary};
+          font-family: ${theme.fonts.primary};
           font-size: ${theme.fontSizes.semiLarge}px;
           font-weight: ${theme.fontWeights.medium};
           left: 0px;

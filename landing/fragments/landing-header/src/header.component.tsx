@@ -3,8 +3,7 @@ import React    from 'react'
 import { Box }  from '@ui/layout'
 import { Logo } from '@ui/logo'
 
-const HeaderBlock = () => {
-  return (
+const HeaderBlock = () => (
       <Box
         backgroundColor = "#616161"
         padding = {["20px 5px", "22px 5px", "25px 5px", "30px 5px"]}
@@ -15,5 +14,4 @@ const HeaderBlock = () => {
         <Box width="100%" maxWidth={[ 600, 790, 1000, 2500 ]} margin='0 auto'/>
       </Box>
   )
-}
 export { HeaderBlock }

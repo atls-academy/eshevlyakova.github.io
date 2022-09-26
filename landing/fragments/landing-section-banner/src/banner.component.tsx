@@ -6,8 +6,7 @@ import { Text } from '@ui/text'
 import { Button } from '@ui/button'
 import { SocialLinks } from '@ui/social-links'
 
-const SectionBanner = () => {
-return (
+const SectionBanner = () => (
     <Box
       backgroundColor="#616161"
       position="relative"
@@ -82,18 +81,20 @@ return (
             color="#FFFFFF">
             Мы не учим программированию и дизайну, мы учим мышлению <br/>способному релизовывывать невозможные идеи.
           </Text>
-          <Button
-            colors='transparent'
-            display={["none", "none", "block", "block"]}
-            width="72px"
-            height="48px"
-            padding="15px 30px">
-            <Image alt='Иконка компьютерной мышки' src='https://svgshare.com/i/mRe.svg' />
-          </Button>
+          <Box
+            display={["none", "none", "block", "block"]}>
+            <Button
+              rounding={12}
+              colors='transparent'
+              width="72px"
+              height="48px"
+              padding="15px 30px">
+              <Image alt='Иконка компьютерной мышки' src='https://svgshare.com/i/mRe.svg' />
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>
   )
-}
 
 export { SectionBanner }
