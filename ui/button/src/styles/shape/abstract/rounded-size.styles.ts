@@ -9,8 +9,8 @@ const getRoundedSizeStyles = (theme): styleFn => {
     rounding: theme.radii.huge,
     fontWeight: theme.fontWeights.medium,
     fontFamily: theme.fonts.primary,
-    paddingLeft: 18,
-    paddingRight: 18,
+    paddingLeft: 30,
+    paddingRight: 30,
     paddingRatio: 0,
   })
 

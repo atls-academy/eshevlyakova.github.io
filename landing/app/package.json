@@ -6,7 +6,7 @@
     "dev": "yarn next dev src"
   },
   "dependencies": {
-    "@apollo/client": "^3.6.9",
+    "@apollo/client": "^3.7.0",
     "@landing/index-page": "0.0.1",
     "graphql": "^15.8.0",
     "next": "^12.1.0",

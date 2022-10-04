@@ -14,18 +14,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollo/client@npm:^3.6.9":
-  version: 3.6.9
-  resolution: "@apollo/client@npm:3.6.9"
+"@apollo/client@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "@apollo/client@npm:3.7.0"
   dependencies:
     "@graphql-typed-document-node/core": ^3.1.1
-    "@wry/context": ^0.6.0
+    "@wry/context": ^0.7.0
     "@wry/equality": ^0.5.0
     "@wry/trie": ^0.3.0
     graphql-tag: ^2.12.6
     hoist-non-react-statics: ^3.3.2
     optimism: ^0.16.1
     prop-types: ^15.7.2
+    response-iterator: ^0.2.6
     symbol-observable: ^4.0.0
     ts-invariant: ^0.10.3
     tslib: ^2.3.0
@@ -34,15 +35,18 @@ __metadata:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     graphql-ws: ^5.5.5
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     subscriptions-transport-ws: ^0.9.0 || ^0.11.0
   peerDependenciesMeta:
     graphql-ws:
       optional: true
     react:
       optional: true
+    react-dom:
+      optional: true
     subscriptions-transport-ws:
       optional: true
-  checksum: a3c037ef3465cb5d736d8495c9c2dcb9741e39d9c102f147b479af1923c5913f710981a311d1098b9969ebe87769b749c22274decb5977ad0619032e7ac2cf26
+  checksum: e6e2fb6c4f05509a0ec1c632fc8eeae7bd4831dbafd2db243bad1412b3c024476a3efb838e31568888cf6b07bd8833467343edac2309e58d60c7bf50f67d449c
   languageName: node
   linkType: hard
 
@@ -55,17 +59,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls-ui-parts/button@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@atls-ui-parts/button@npm:0.0.4"
+"@atls-ui-parts/button@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "@atls-ui-parts/button@npm:0.0.10"
   dependencies:
-    "@atls-ui-parts/styles": 0.0.1
+    "@atls-ui-parts/styles": 0.0.4
   peerDependencies:
     "@emotion/styled": ^11.1.5
     react: ^17.0.1
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-  checksum: f6ed83e8abeea46b87f15ee503bcabf6067fa99a981ee0a1d83afcd344384aff471b61ffcbba7c9f5da40a8de83d1f66de9a8e189d759c5e2ae66878b517e3aa
+  checksum: af343b0b4c683bc9cb8cf3dcd472235d2e032c8944da5faeb8ec62a869e6c75c1f3b3bf33c6a1d55728781a9ac3312f292d5f04577a01c8afa5fe7c1ef56debe
   languageName: node
   linkType: hard
 
@@ -96,16 +100,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls-ui-parts/styles@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@atls-ui-parts/styles@npm:0.0.1"
+"@atls-ui-parts/styles@npm:0.0.4":
+  version: 0.0.4
+  resolution: "@atls-ui-parts/styles@npm:0.0.4"
   peerDependencies:
     styled-system: ^5.1.5
-  checksum: 06a333d67bd87ec26ceb21bc48a670365fe93789e5bec457a9a389a679345693d4bf34d1557c8668c8c9a6495cddf5d38a2dedd610c3310a19f97ef72bb8f5d0
+  checksum: f47f1162cb08e138257aa7b26d47fd8b48a4cd3d4c5bc4fdc4797a3dee356fe79e77ddddbf7ac55225c6245e47a20e1c34815d1dc22205dcd6d1f9231c7cbd7e
   languageName: node
   linkType: hard
 
-"@atls-ui-parts/text@npm:0.0.10":
+"@atls-ui-parts/text@npm:0.0.10, @atls-ui-parts/text@npm:^0.0.10":
   version: 0.0.10
   resolution: "@atls-ui-parts/text@npm:0.0.10"
   dependencies:
@@ -114,18 +118,6 @@ __metadata:
     "@emotion/styled": ^11.1.5
     react: ^17.0.1
   checksum: 230609e5f5fb8129c12ae34ce89dd7d7c6f46d7dda5b0bf9b9e9a4ef530bba3f635fffb56390b0dab1e71fe1c50a858e4bf4108e9142213ce3f55a289482c40f
-  languageName: node
-  linkType: hard
-
-"@atls-ui-parts/text@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "@atls-ui-parts/text@npm:0.0.5"
-  dependencies:
-    styled-system: ^5.1.5
-  peerDependencies:
-    "@emotion/styled": ^11.1.5
-    react: ^17.0.1
-  checksum: a5ed056a72fa128036b74cc289b49bdfe245b616fb51c34fec834d29eacf7c51c2cdad874c1f2ef9b8d403ed67b98da3f09b140dd63807a8a01f97004238854f
   languageName: node
   linkType: hard
 
@@ -867,7 +859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.9.3":
+"@emotion/react@npm:^11.10.4":
   version: 11.10.4
   resolution: "@emotion/react@npm:11.10.4"
   dependencies:
@@ -911,7 +903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.9.3":
+"@emotion/styled@npm:^11.10.4":
   version: 11.10.4
   resolution: "@emotion/styled@npm:11.10.4"
   dependencies:
@@ -1338,7 +1330,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/app@workspace:landing/app"
   dependencies:
-    "@apollo/client": ^3.6.9
+    "@apollo/client": ^3.7.0
     "@landing/index-page": 0.0.1
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
@@ -1355,8 +1347,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/banner-fragment@workspace:landing/fragments/landing-section-banner"
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
     "@ui/button": "workspace:0.0.1"
@@ -1381,12 +1373,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/header-fragment@workspace:landing/fragments/landing-header"
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
-    "@landing/header-fragment": 0.0.1
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/node": ^18.7.14
     "@types/react": 18.0.1
-    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/logo": "workspace:0.0.1"
     next: ^12.1.0
@@ -1406,8 +1396,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/index-page@workspace:landing/pages/index-page"
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@landing/banner-fragment": 0.0.1
     "@landing/header-fragment": 0.0.1
     "@types/node": ^18.7.14
@@ -2007,9 +1997,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
   dependencies:
-    "@atls-ui-parts/button": ^0.0.4
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@atls-ui-parts/button": ^0.0.10
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/react": ^17
     "@types/react-dom": ^17
     react: ^17
@@ -2028,8 +2018,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/image@workspace:ui/image"
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/styled-system": ^5
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -2048,8 +2038,8 @@ __metadata:
   resolution: "@ui/layout@workspace:ui/layout"
   dependencies:
     "@atls-ui-parts/layout": ^0.0.7
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/styled-system": ^5
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -2068,8 +2058,8 @@ __metadata:
   resolution: "@ui/link@workspace:ui/link"
   dependencies:
     "@atls-ui-parts/link": ^0.0.10
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/react-dom": ^17.0.9
     "@types/styled-system": ^5
     "@ui/text": "workspace:0.0.1"
@@ -2091,8 +2081,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/logo@workspace:ui/logo"
   dependencies:
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/styled-system": ^5
     "@ui/link": "workspace:0.0.1"
     next: 12.1.0
@@ -2129,9 +2119,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/text@workspace:ui/text"
   dependencies:
-    "@atls-ui-parts/text": ^0.0.5
-    "@emotion/react": ^11.9.3
-    "@emotion/styled": ^11.9.3
+    "@atls-ui-parts/text": ^0.0.10
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
     "@types/styled-system": ^5
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -2150,7 +2140,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/theme@workspace:ui/theme"
   dependencies:
-    "@emotion/react": ^11.9.3
+    "@emotion/react": ^11.10.4
     react: ^17.0.2
     react-dom: ^17.0.2
     seamless-scroll-polyfill: ^2.2.0
@@ -2318,6 +2308,15 @@ __metadata:
   dependencies:
     tslib: ^2.3.0
   checksum: 4187863175061a8f54659f124e3e5c202e010b2b65bf886b4de9777ce8a45cf183b6f6d88f1f537002cbcbea52103a2eadc337d494106490def10acaf9522c5d
+  languageName: node
+  linkType: hard
+
+"@wry/context@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@wry/context@npm:0.7.0"
+  dependencies:
+    tslib: ^2.3.0
+  checksum: f4ff78023a0b949122037aae766232b7d2284dc415204d22d9ea6d7969ff8f5f29b18128bc9a40e68dc054c8a12b1bf5868a357fdb50c398c447290c3a5b0496
   languageName: node
   linkType: hard
 
@@ -6398,6 +6397,13 @@ __metadata:
   bin:
     resolve: bin/resolve
   checksum: c79ecaea36c872ee4a79e3db0d3d4160b593f2ca16e031d8283735acd01715a203607e9ded3f91f68899c2937fa0d49390cddbe0fb2852629212f3cda283f4a7
+  languageName: node
+  linkType: hard
+
+"response-iterator@npm:^0.2.6":
+  version: 0.2.6
+  resolution: "response-iterator@npm:0.2.6"
+  checksum: b0db3c0665a0d698d65512951de9623c086b9c84ce015a76076d4bd0bf733779601d0b41f0931d16ae38132fba29e1ce291c1f8e6550fc32daaa2dc3ab4f338d
   languageName: node
   linkType: hard
 

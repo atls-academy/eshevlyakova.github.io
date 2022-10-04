@@ -9,8 +9,8 @@ const getMediumSizeStyles = (theme): styleFn => {
     rounding: theme.radii.huge,
     fontWeight: theme.fontWeights.medium,
     fontFamily: theme.fonts.primary,
-    paddingLeft: 12,
-    paddingRight: 12,
+    paddingLeft: 16,
+    paddingRight: 16,
     paddingRatio: 0,
   })
 
