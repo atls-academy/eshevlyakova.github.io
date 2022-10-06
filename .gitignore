@@ -46,4 +46,5 @@ dist/
 # JetBrains folder
 .idea
 
-landing/app/src/.next/server/webpack-runtime.js
+landing/entrypoints/renderer/.next
+landing/entrypoints/renderer/src/.next

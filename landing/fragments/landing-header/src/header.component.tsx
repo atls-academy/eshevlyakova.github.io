@@ -1,18 +1,20 @@
 import React    from 'react'
 
-import { Box }  from '@ui/layout'
+import { Box, Layout }  from '@ui/layout'
 import { Logo } from '@ui/logo'
 
 const HeaderBlock = () => (
   <Box
-    backgroundColor='#616161'
-    padding={['20px 5px', '22px 5px', '25px 5px', '30px 5px']}
-    display='block'
-  >
-    <Box width={[36, 40, 56, 56]}>
-      <Logo />
+    backgroundColor='background.gray'
+    flexDirection='column'
+    alignItems='center'>
+    <Layout flexBasis={[20, 22, 30]}/>
+    <Box width='98%' maxWidth={[600, 790, 2500]}>
+      <Box width={[36, 40, 56]}>
+        <Logo />
+      </Box>
     </Box>
-    <Box width='100%' maxWidth={[600, 790, 1000, 2500]} margin='0 auto' />
+    <Layout flexBasis={[20, 22, 30]}/>
   </Box>
 )
 export { HeaderBlock }

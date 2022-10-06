@@ -1,106 +1,140 @@
-import React           from 'react'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
+import { useIntl }          from 'react-intl'
 
 import { Button }      from '@ui/button'
 import { Image }       from '@ui/image'
-import { Box }         from '@ui/layout'
+import { Box, Layout } from '@ui/layout'
 import { SocialLinks } from '@ui/social-links'
-import { Text }        from '@ui/text'
+import { Text, Space } from '@ui/text'
 
-import { messages }    from './messages'
+const SectionBanner = () => {
+  const { formatMessage } = useIntl();
 
-const SectionBanner = () => (
-  <Box
-    backgroundColor='#616161'
-    position='relative'
-    height={['89vh', '89vh', '90vh', '90vh']}
-    minHeight={['520px', '630px', '500px', '500px']}
-    padding='0 5px'
-    paddingBottom={['65px', '65px', '38px', '48px']}
-    color='#FFFFFF'
-    justifyContent={['end', 'end', 'start', 'start']}
-    flexDirection={['column-reverse', 'column-reverse', 'row', 'row']}
-  >
-    <SocialLinks />
+  return (
     <Box
-      width='100%'
-      maxWidth={[600, 790, 1000, 2500]}
-      margin='0 auto'
+      backgroundColor='background.gray'
+      position='relative'
+      height={['89vh', '89vh', '90vh']}
+      minHeight={['520px', '630px', '500px']}
       flexDirection='column'
-      justifyContent='end'
-      height='100%'
-    >
-      <Box
-        display={['none', 'none', 'flex', 'flex']}
-        alignItems='end'
-        marginBottom={[40, 40, 40, 57]}
-      >
-        <Text
-          fontWeight='400'
-          fontSize={[80, 70, 76, 96]}
-          lineHeight={['110%', '110%', '110%', '120%']}
-          letterSpacing='-0.02em'
-          color='#FFFFFF'
-        >
-          {messages.oneLineTitle} <br />
-          {messages.secondLineTitle} <br />
-          {messages.thirdLineTitle}&nbsp;
-        </Text>
+      justifyContent={['end', 'end', 'start']}
+      alignItems={['start', 'start', 'center']}>
         <Box
-          padding={['0 26px', '0 22px', '0 26px', '0 32px']}
-          borderRadius='24px'
-          backgroundColor='rgba(255, 255, 255, 0.08)'
-        >
-          <Text
-            fontSize={[70, 60, 66, 80]}
-            lineHeight='130%'
+          width='98%'
+          maxWidth={[600, 790, 2500]}
+          flexDirection='column'
+          justifyContent='end'
+          height='100%'>
+          <Box
+          display={['none', 'none', 'flex']}
+          flexDirection='column'
+          justifyContent='end'>
+            <Text
+            fontWeight='normal'
+            fontSize={['semiGiant', 'semiIncreased', 'giant']}
+            lineHeight={['small', 'small', 'extra']}
             letterSpacing='-0.02em'
-            textTransform='uppercase'
-            fontFeatureSettings="'salt' on"
-            color='#FFFFFF'
-          >
-            {' '}
-            {messages.partTitle}{' '}
-          </Text>
+            color='text.white'>  
+            <FormattedMessage id='banner.oneLineTitle' defaultMessage='Обучаем' />
+            </Text>
+            <Text
+            fontWeight='normal'
+            fontSize={['semiGiant', 'semiIncreased', 'giant']}
+            lineHeight={['small', 'small', 'extra']}
+            letterSpacing='-0.02em'
+            color='text.white'> 
+            <FormattedMessage id='banner.secondLineTitle' defaultMessage='профессионалов' />
+            </Text>
+            <Box>
+              <Text
+                fontWeight='normal'
+                fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                lineHeight={['small', 'small', 'extra']}
+                letterSpacing='-0.02em'
+                color='text.white'>
+                <FormattedMessage id='banner.thirdLineTitle' defaultMessage='для революции в' /> 
+                <Space />
+              </Text>
+              <Box
+                borderRadius='24px'
+                backgroundColor='background.lightGray'
+                width='130px'
+                justifyContent='center'>
+                <Text
+                  fontSize={['semiIncreased', 'semiBig', 'increased']}
+                  lineHeight='medium'
+                  letterSpacing='-0.02em'
+                  textTransform='uppercase'
+                  fontFeatureSettings="'salt' on"
+                  color='text.white'>
+                  <FormattedMessage id='banner.partTitle' defaultMessage='it' />
+                </Text>
+              </Box>
+            </Box>
+            <Layout flexBasis={[40, 40, 57]}/>
+          </Box>
+          <Box
+          display={['flex', 'flex', 'none']}
+          flexDirection='column'
+          justifyContent='end'>
+            <Text
+              fontWeight='normal'
+              fontSize={['enlarged', 'big', 'big']}
+              lineHeight='small'
+              letterSpacing='-0.02em'
+              color='text.white'>
+              <FormattedMessage id='banner.oneLineTitle' defaultMessage='Обучаем' />
+            </Text>
+            <Text
+              fontWeight='normal'
+              fontSize={['enlarged', 'big', 'big']}
+              lineHeight='small'
+              letterSpacing='-0.02em'
+              color='text.white'>
+              <FormattedMessage id='banner.secondLineTitle' defaultMessage='профессионалов' />
+            </Text>
+            <Text
+              fontWeight='normal'
+              fontSize={['enlarged', 'big', 'big']}
+              lineHeight='small'
+              letterSpacing='-0.02em'
+              color='text.white'> 
+              <FormattedMessage id='banner.thirdLineTitleMobile' defaultMessage='для революции в IT' />
+            </Text>
+            <Layout flexBasis='20px'/>
+          </Box>
+          <Box
+            width={['100%', '95%', '80%']}
+            borderTop='1px solid rgba(255, 255, 255, 0.25)'
+            flexDirection='column'>
+            <Layout flexBasis={[25, 30, 42]}/>
+            <Box
+              alignItems='center'
+              justifyContent='space-between'>
+              <Layout flexBasis={['auto', 'auto', '700px']}>
+              <Text fontSize={['regular', 'medium', 'semiLarge']} lineHeight='primary' color='text.white'>
+                <FormattedMessage id='banner.description' defaultMessage='Мы не учим программированию и дизайну, мы учим мышлению способному релизовывывать невозможные идеи.' />
+              </Text>
+              </Layout>
+              <Box display={['none', 'none', 'block']}>
+              <Button rounding={12} size='rounded' colors='transparent' width='72px' height='48px'>
+                <Image
+                  alt={formatMessage({
+                    id: 'altComputerMouse',
+                    defaultMessage: 'Иконка компьютерной мыши',
+                  })}
+                  src='http://dev.eshevlyakova.ru/svg-atlantis/computer-mouse.svg'
+                  contain />
+              </Button>
+              </Box>
+            </Box>
+          </Box>
+          <SocialLinks />
         </Box>
-      </Box>
-
-      <Text
-        display={['block', 'block', 'none', 'none']}
-        fontWeight='400'
-        fontSize={[40, 68, 0, 0]}
-        lineHeight={['110%', '110%', 0, 0]}
-        letterSpacing='-0.02em'
-        marginBottom='20px'
-        color='#FFFFFF'
-      >
-        {messages.oneLineTitle} <br />
-        {messages.secondLineTitle} <br />
-        {messages.thirdLineTitleMobile}
-      </Text>
-
-      <Box
-        width={['100%', '95%', '85%', '80%']}
-        paddingTop={[25, 30, 35, 48]}
-        borderTop='1px solid rgba(255, 255, 255, 0.25)'
-        alignItems='center'
-        justifyContent='space-between'
-      >
-        <Text fontSize={[16, 18, 20, 20]} lineHeight='140%' color='#FFFFFF'>
-          {' '}
-          {messages.oneLineDescription} <br /> {messages.secondLineDescription}{' '}
-        </Text>
-        <Box display={['none', 'none', 'block', 'block']}>
-          <Button rounding={12} size='rounded' colors='transparent' width='72px' height='48px'>
-            <Image
-              alt='Иконка компьютерной мышки'
-              src='http://dev.eshevlyakova.ru/svg-atlantis/computer-mouse.svg'
-              contain
-            />
-          </Button>
-        </Box>
-      </Box>
+      <Layout flexBasis={[65, 65, 48]}/>
     </Box>
-  </Box>
-)
+  )
+}
 
 export { SectionBanner }

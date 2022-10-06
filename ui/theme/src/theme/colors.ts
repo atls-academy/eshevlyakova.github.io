@@ -60,22 +60,11 @@ const colors = {
     transparent: 'rgba(255, 255, 255, 0.3)',
   },
   text: {
-    accent: 'rgba(63, 135, 249, 1)',
-    hover: 'rgba(24,97,214,1)',
-    black: 'rgba(23, 46, 71, 1)',
-    lightBlue: 'rgba(63, 135, 249, 0.32)',
     white: 'rgba(255,255,255,1)',
-    lightGray: 'rgba(154, 168, 184, 1)',
-    gray: 'rgba(98, 112, 127, 1)',
   },
   background: {
-    lightGray: 'rgba(246, 246, 251, 1)',
-    transparentBlue: 'rgba(23, 35, 68, 0.75)',
-    transparentBlack: 'rgba(0,0,0,0.5)',
-    darkBlue: 'rgba(23,35,68,1)',
-    hero: 'rgba(48, 51, 121, 1)',
-    blue: 'rgba(36,114,238,1)',
-    white: 'rgba(255,255,255,1)',
+    gray: '#616161',
+    lightGray: 'rgba(255, 255, 255, 0.08)'
   },
   input: {
     background: 'rgba(255, 255, 255, 1)',
