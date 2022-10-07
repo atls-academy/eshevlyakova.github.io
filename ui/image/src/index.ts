@@ -1,2 +1,1 @@
-export * from './image.component'
-export * from './image.interface'
+export * from '@atls-ui-parts/image'

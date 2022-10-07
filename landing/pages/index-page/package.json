@@ -1,19 +1,20 @@
 {
-    "name": "@landing/index-page",
-    "version": "0.0.1",
-    "main": "src/index.ts",
-    "dependencies": {
-        "@landing/banner-fragment": "0.0.1",
-        "@landing/header-fragment": "0.0.1",
-        "next": "^12.1.0",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "typescript": "^4.8.4"
-    },
-    "devDependencies": {
-        "@emotion/react": "^11.10.4",
-        "@emotion/styled": "^11.10.4",
-        "@types/node": "^18.7.14",
-        "@types/react": "18.0.21"
-    }
+  "name": "@landing/index-page",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@landing/banner-fragment": "0.0.1",
+    "@landing/header-fragment": "0.0.1"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@types/node": "^18.7.14",
+    "@types/react": "18.0.21"
+  },
+  "peerDependencies": {
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }

@@ -64,7 +64,8 @@ const colors = {
   },
   background: {
     gray: '#616161',
-    lightGray: 'rgba(255, 255, 255, 0.08)'
+    lightGray: 'rgba(255, 255, 255, 0.08)',
+    transparentGray: 'rgba(255, 255, 255, 0.25)',
   },
   input: {
     background: 'rgba(255, 255, 255, 1)',

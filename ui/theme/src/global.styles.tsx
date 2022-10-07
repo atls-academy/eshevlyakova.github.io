@@ -27,9 +27,7 @@ export const GlobalStyles = () => {
         *::after {
             box-sizing: border-box;
         }
-        body {
-          font-family: "primary", sans-serif;
-        }
+
         ul,
         ol {
             padding: 0;
@@ -40,12 +38,7 @@ export const GlobalStyles = () => {
         h2,
         h3,
         h4,
-        p,
-        ul,
-        ol,
-        li,
-        dl,
-        dd {
+        p {
             margin: 0;
         }
 

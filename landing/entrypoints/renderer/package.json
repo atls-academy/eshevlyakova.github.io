@@ -1,5 +1,5 @@
 {
-  "name": "@landing/app",
+  "name": "@landing/renderer-entrypoint",
   "version": "0.0.1",
   "license": "BSD-3-Clause",
   "files": [
@@ -11,10 +11,6 @@
     "dev": "yarn next dev src"
   },
   "dependencies": {
-    "@atls-ui-proto/theme": "0.0.1",
-    "@atls/kratos-session": "^0.0.1",
-    "@atls/react-identity-user-provider": "^0.0.2",
-    "@atls/react-user": "^0.1.44",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@ui/theme": "workspace:0.0.1",

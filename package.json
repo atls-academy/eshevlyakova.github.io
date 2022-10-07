@@ -4,10 +4,8 @@
   "license": "BSD 3-Clause",
   "workspaces": [
     "first-task",
-    "forks/**/*",
     "landing/**/*",
-    "ui/**/*",
-    "globals/**/*"
+    "ui/**/*"
   ],
   "resolutions": {
     "@types/node": "16",
@@ -21,6 +19,7 @@
   },
   "dependencies": {
     "@emotion/css": "^11.10.0",
+    "@ui/icons": "workspace:^",
     "csstype": "^3.1.0"
   },
   "devDependencies": {
