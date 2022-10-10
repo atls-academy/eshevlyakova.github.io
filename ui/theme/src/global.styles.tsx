@@ -14,38 +14,24 @@ export const GlobalStyles = () => {
     <Global
       styles={css`
         @import url('http://fonts.cdnfonts.com/css/helvetica-2');
-
         html,
         body,
         #__next {
+          height: 0;
           margin: 0;
           -webkit-font-smoothing: antialiased;
           -webkit-overflow-scrolling: touch;
         }
+        #__next {
+          display: flex;
+          flex-direction: column;
+        }
+        
         *,
         *::before,
         *::after {
             box-sizing: border-box;
         }
-
-        ul,
-        ol {
-            padding: 0;
-        }
-        
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        p {
-            margin: 0;
-        }
-
-        #__next {
-          display: flex;
-          flex-direction: column;
-        }       
       `}
     />
   )
