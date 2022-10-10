@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "^0.1.12",
-    "@atls/config-prettier": "^0.0.3",
-    "@atls/prettier-plugin": "^0.0.3",
+    "@atls/config-prettier": "^0.0.5",
+    "@atls/prettier-plugin": "^0.0.5",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@svgr/core": "5.5.0",

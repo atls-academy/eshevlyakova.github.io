@@ -3,31 +3,41 @@ import { Content }          from '@atls-ui-parts/button'
 
 import React                from 'react'
 import { FC }               from 'react'
-import { layout }           from 'styled-system'
-import { space }            from 'styled-system'
+import { forwardRef }       from 'react'
+import { useState }         from 'react'
+
+import { useHover }         from '@ui/utils'
 
 import { ButtonProps }      from './button.interfaces'
+import { appearanceStyles } from './button.appearance-styles'
 import { baseStyles }       from './button.styles'
 import { shapeStyles }      from './button.styles'
-import { appearanceStyles } from './button.styles'
+import { contentStyles }    from './button.styles'
+import { fillStyles }       from './button.styles'
 
-export const ButtonElement = styled.button<any>(
+export const ButtonElement = styled('button')(
   baseStyles,
+  contentStyles,
   shapeStyles,
   appearanceStyles,
-  layout,
-  space
+  fillStyles
 )
 
-export const Button: FC<ButtonProps> = ({
-  divider = 12,
-  rounded = false,
-  children,
-  dotted = false,
-  active = false,
-  ...props
-}) => (
-  <ButtonElement rounding={rounded && 20} active={active} {...props}>
-    <Content divider={divider}>{children}</Content>
-  </ButtonElement>
-)
+export const Button: FC<ButtonProps> = forwardRef(({ children, active, ...props }, ref) => {
+  const [hover, hoverProps] = useHover()
+  const [pressed, setPressed] = useState<boolean>(false)
+
+  return (
+    <ButtonElement
+      hover={hover}
+      pressed={pressed || active}
+      onMouseDown={() => setPressed(true)}
+      onMouseUp={() => setPressed(false)}
+      {...hoverProps}
+      {...props}
+      ref={ref}
+    >
+      <Content divider={8}>{children}</Content>
+    </ButtonElement>
+  )
+})

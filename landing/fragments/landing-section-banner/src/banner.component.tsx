@@ -25,25 +25,29 @@ const SectionBanner = () => (
         <Column justifyContent='end'>
           <Box display={['none', 'none', 'flex']}>
             <Column justifyContent='end'>
-              <Text
-                fontWeight='normal'
-                fontSize={['semiGiant', 'semiIncreased', 'giant']}
-                lineHeight={['small', 'small', 'extra']}
-                color='text.white'
-              >
-                <FormattedMessage id='landing_section_banner.we_teach' defaultMessage='Обучаем' />
-              </Text>
-              <Text
-                fontWeight='normal'
-                fontSize={['semiGiant', 'semiIncreased', 'giant']}
-                lineHeight={['small', 'small', 'extra']}
-                color='text.white'
-              >
-                <FormattedMessage
-                  id='landing_section_banner.professionals'
-                  defaultMessage='профессионалов'
-                />
-              </Text>
+              <Layout>
+                <Text
+                  fontWeight='normal'
+                  fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                  lineHeight={['small', 'small', 'extra']}
+                  color='text.white'
+                >
+                  <FormattedMessage id='landing_section_banner.we_teach' defaultMessage='Обучаем' />
+                </Text>
+              </Layout>
+              <Layout>
+                <Text
+                  fontWeight='normal'
+                  fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                  lineHeight={['small', 'small', 'extra']}
+                  color='text.white'
+                >
+                  <FormattedMessage
+                    id='landing_section_banner.professionals'
+                    defaultMessage='профессионалов'
+                  />
+                </Text>
+              </Layout>
               <Box>
                 <Text
                   fontWeight='normal'
@@ -77,36 +81,42 @@ const SectionBanner = () => (
             </Column>
           </Box>
           <Column display={['flex', 'flex', 'none']} justifyContent='end'>
-            <Text
-              fontWeight='normal'
-              fontSize={['semiEnlarged', 'big', 'big']}
-              lineHeight='small'
-              color='text.white'
-            >
-              <FormattedMessage id='landing_section_banner.we_teach' defaultMessage='Обучаем' />
-            </Text>
-            <Text
-              fontWeight='normal'
-              fontSize={['semiEnlarged', 'big', 'big']}
-              lineHeight='small'
-              color='text.white'
-            >
-              <FormattedMessage
-                id='landing_section_banner.professionals'
-                defaultMessage='профессионалов'
-              />
-            </Text>
-            <Text
-              fontWeight='normal'
-              fontSize={['semiEnlarged', 'big', 'big']}
-              lineHeight='small'
-              color='text.white'
-            >
-              <FormattedMessage
-                id='landing_section_banner.for_the_revolution_in_it'
-                defaultMessage='для революции в IT'
-              />
-            </Text>
+            <Layout>
+              <Text
+                fontWeight='normal'
+                fontSize={['semiEnlarged', 'big', 'big']}
+                lineHeight='small'
+                color='text.white'
+              >
+                <FormattedMessage id='landing_section_banner.we_teach' defaultMessage='Обучаем' />
+              </Text>
+            </Layout>
+            <Layout>
+              <Text
+                fontWeight='normal'
+                fontSize={['semiEnlarged', 'big', 'big']}
+                lineHeight='small'
+                color='text.white'
+              >
+                <FormattedMessage
+                  id='landing_section_banner.professionals'
+                  defaultMessage='профессионалов'
+                />
+              </Text>
+            </Layout>
+            <Layout>
+              <Text
+                fontWeight='normal'
+                fontSize={['semiEnlarged', 'big', 'big']}
+                lineHeight='small'
+                color='text.white'
+              >
+                <FormattedMessage
+                  id='landing_section_banner.for_the_revolution_in_it'
+                  defaultMessage='для революции в IT'
+                />
+              </Text>
+            </Layout>
             <Layout flexBasis='20px' />
           </Column>
           <Box width={['100%', '95%', '80%']}>
@@ -127,13 +137,7 @@ const SectionBanner = () => (
                   </Text>
                 </Layout>
                 <Box display={['none', 'none', 'block']}>
-                  <Button
-                    rounding={12}
-                    size='rounded'
-                    colors='transparent'
-                    width='72px'
-                    height='48px'
-                  >
+                  <Button size='transparent' variant='transparent'>
                     <Box>
                       <ComputerMouseIcon width={20} height={20} />
                     </Box>

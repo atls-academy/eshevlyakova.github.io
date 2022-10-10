@@ -1,58 +1,48 @@
 const colors = {
   button: {
-    primary: {
-      default: 'rgba(63,135,249,1)',
-      hover: 'rgba(36,114,238,1)',
-      active: 'rgba(24,97,214,1)',
-      fontColor: 'rgba(255,255,255,1)',
-    },
-    secondary: {
-      default: 'rgba(63,135,249,1)',
-      hover: 'rgba(36,113,237,1)',
-      active: 'rgba(24,97,214,1)',
-      background: 'rgba(63,135,249,0.16)',
-    },
-    tertiary: {
-      default: 'transparent',
-      active: 'rgba(255,255,255,1)',
-      fontColor: 'rgba(98, 112, 127, 1)',
-      activeFontColor: 'rgba(63, 135, 249, 1)',
+    social: {
+      default: {
+        background: 'rgba(255, 255, 255, 0.15)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
+      hover: {
+        background: 'rgba(255, 255, 255, 0.25)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
+      pressed: {
+        background: 'rgba(255, 255, 255, 0.25)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
+      disabled: {
+        background: 'rgba(255, 255, 255, 0.15)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
     },
     transparent: {
-      default: 'rgba(255, 255, 255, 0.25)',
-      hover: 'rgba(255, 255, 255, 0.45)',
-      active: 'rgba(255, 255, 255, 0.45)',
-      fontColor: 'rgb(255,255,255)',
-      backgroundColor: 'rgba(0,0,0,0)',
-    },
-    clipboard: {
-      default: 'rgba(255, 255, 255, 0.3)',
-      hover: 'rgba(255, 255, 255, 0.5)',
-      active: 'rgba(63, 135, 249, 1)',
-      fontColor: 'rgba(255,255,255,1)',
-      background: 'rgba(15, 76, 139, 0.05)',
-    },
-    social: {
-      default: 'rgba(255, 255, 255, 0.15)',
-      hover: 'rgba(255, 255, 255, 0.25)',
-      active: 'rgba(255, 255, 255, 0.25)',
-      borderColor: 'transparent',
-    },
-    tag: {
-      default: 'rgba(255, 255, 255, 1)',
-      hover: 'rgba(36, 114, 238, 1)',
-      active: 'rgba(24, 97, 214, 1)',
-      fontColor: 'rgba(23, 46, 71, 1)',
-      border: 'rgba(15, 76, 139, 0.08)',
-      background: 'transparent',
-    },
-    greyTag: {
-      default: 'rgba(255, 255, 255, 1)',
-      hover: 'rgba(63, 135, 249, 1)',
-      active: 'rgba(63, 135, 249, 1)',
-      fontColor: 'rgba(23, 46, 71, 1)',
-      border: 'transparent',
-      background: 'rgba(15, 76, 139, 0.05)',
+      default: {
+        background: 'transparent',
+        font: 'rgb(255,255,255)',
+        border: 'rgba(255, 255, 255, 0.25)',
+      },
+      hover: {
+        background: 'transparent',
+        font: 'rgb(255,255,255)',
+        border: 'rgba(255, 255, 255, 0.5)',
+      },
+      pressed: {
+        background: 'transparent',
+        font: 'rgb(255,255,255)',
+        border: 'rgba(255, 255, 255, 0.5)',
+      },
+      disabled: {
+        background: 'transparent',
+        font: 'rgb(255,255,255)',
+        border: 'rgba(255, 255, 255, 0.25)',
+      },
     },
   },
   border: {

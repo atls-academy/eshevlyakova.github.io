@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@atls-ui-parts/image": "^0.0.1",
+    "@atls-ui-parts/image": "^0.0.4",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
     "react": "^17.0.2",

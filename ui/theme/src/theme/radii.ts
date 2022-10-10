@@ -1,5 +1,6 @@
 const radii = {
   atomic: 2,
+  medium: 12,
   big: 16,
   huge: 40,
   max: '100%',
