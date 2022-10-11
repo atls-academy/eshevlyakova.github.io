@@ -24,10 +24,10 @@ const wideSocialStyles = createShapeStyles({
 })
 
 const transparentStyles = createShapeStyles({
-  size: 52,
+  size: 48,
   rounding: prop('theme.radii.medium') as unknown as number,
-  paddingLeft: 30,
-  paddingRight: 30,
+  paddingLeft: 25,
+  paddingRight: 25,
 })
 
 export const baseStyles = createBaseStyles()

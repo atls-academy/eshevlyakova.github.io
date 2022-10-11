@@ -9,7 +9,7 @@ const HeaderBlock = () => (
   <Box backgroundColor='background.gray'>
     <Column width='100%' alignItems='center'>
       <Layout flexBasis={[20, 22, 30]} />
-      <Box width='100%' maxWidth={[600, 790, 1920]}>
+      <Box width='100%' maxWidth={[600, 790, '100%']}>
         <Layout flexBasis={[10, 15, 30]} />
         <Box width={[36, 40, 56]}>
           <Logo />

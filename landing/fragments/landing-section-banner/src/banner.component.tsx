@@ -22,7 +22,7 @@ const SectionBanner = () => (
     >
       <Box width='100%' maxWidth={[600, 790, 1460]} height='100%'>
         <Layout flexBasis={[10, 15, 30]} />
-        <Column justifyContent='end'>
+        <Column justifyContent='end' width='100%'>
           <Box display={['none', 'none', 'flex']}>
             <Column justifyContent='end'>
               <Layout>
@@ -119,7 +119,7 @@ const SectionBanner = () => (
             </Layout>
             <Layout flexBasis='20px' />
           </Column>
-          <Box width={['100%', '95%', '80%']}>
+          <Box width={['100%', '95%', '83%']} maxWidth='1160px'>
             <Column>
               <Divider weight={1} backgroundColor='background.transparentGray' />
               <Layout flexBasis={[25, 30, 42]} />
