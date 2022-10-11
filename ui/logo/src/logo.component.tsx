@@ -1,11 +1,11 @@
-import React          from 'react'
-import { FC }         from 'react'
-import { useRouter }  from 'next/router'
+import React         from 'react'
+import { FC }        from 'react'
+import { useRouter } from 'next/router'
 
-import { NextLink }   from '@ui/link'
-import { Link }       from '@ui/link'
+import { NextLink }  from '@ui/link'
+import { Link }      from '@ui/link'
 
-import { Icon }       from './icon.component'
+import { Icon }      from './icon.component'
 
 const Logo: FC = () => {
   const router = useRouter()
@@ -14,14 +14,14 @@ const Logo: FC = () => {
     return (
       // eslint-disable-next-line
       <Link href='#'>
-          <Icon />
+        <Icon />
       </Link>
     )
   }
 
   return (
     <NextLink path='/'>
-        <Icon />
+      <Icon />
     </NextLink>
   )
 }
