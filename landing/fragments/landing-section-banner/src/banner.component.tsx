@@ -12,17 +12,12 @@ import { Space }             from '@ui/text'
 import { Text }              from '@ui/text'
 
 const SectionBanner = () => (
-  <Box backgroundColor='background.gray' position='relative'>
-    <Column
-      width='100%'
-      height='90vh'
-      minHeight={['520px', '630px', '500px']}
-      justifyContent={['end', 'end', 'start']}
-      alignItems='center'
-    >
+  <Box backgroundColor='background.gray' position='relative' height='90vh'>
+    <Column width='100%' alignItems='center'>
+      <Layout flexBasis={50} flexGrow={1} flexShrink={0} />
       <Box width='100%' maxWidth={[600, 790, 1460]} height='100%'>
         <Layout flexBasis={[10, 15, 30]} />
-        <Column justifyContent='end' width='100%'>
+        <Column justifyContent='end' width={['100%', '100%', '85%']} maxWidth={1160}>
           <Box display={['none', 'none', 'flex']}>
             <Column justifyContent='end'>
               <Layout>
@@ -62,9 +57,9 @@ const SectionBanner = () => (
                   <Space />
                 </Text>
                 <Box
-                  borderRadius='24px'
+                  borderRadius='bigger'
                   backgroundColor='background.lightGray'
-                  width='130px'
+                  width={130}
                   justifyContent='center'
                 >
                   <Text
@@ -117,9 +112,9 @@ const SectionBanner = () => (
                 />
               </Text>
             </Layout>
-            <Layout flexBasis='20px' />
+            <Layout flexBasis={20} />
           </Column>
-          <Box width={['100%', '95%', '83%']} maxWidth='1160px'>
+          <Box width='100%'>
             <Column>
               <Divider weight={1} backgroundColor='background.transparentGray' />
               <Layout flexBasis={[25, 30, 42]} />
@@ -136,7 +131,7 @@ const SectionBanner = () => (
                     />
                   </Text>
                 </Layout>
-                <Box display={['none', 'none', 'block']}>
+                <Box display={['none', 'none', 'flex']}>
                   <Button size='transparent' variant='transparent'>
                     <Box>
                       <ComputerMouseIcon width={20} height={20} />

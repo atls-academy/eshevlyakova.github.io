@@ -17,7 +17,6 @@ export const GlobalStyles = () => {
         html,
         body,
         #__next {
-          height: 0;
           margin: 0;
           -webkit-font-smoothing: antialiased;
           -webkit-overflow-scrolling: touch;
