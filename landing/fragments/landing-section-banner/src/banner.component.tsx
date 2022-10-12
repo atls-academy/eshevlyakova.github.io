@@ -12,7 +12,7 @@ import { Space }             from '@ui/text'
 import { Text }              from '@ui/text'
 
 const SectionBanner = () => (
-  <Box backgroundColor='background.gray' height={['100%', '100%', '85vh']}>
+  <Box backgroundColor='background.gray' height={['100%', '100%', '89vh']}>
     <Layout flexBasis={[20, 20, 230]} />
     <Layout
       width='100%'
