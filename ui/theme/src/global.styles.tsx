@@ -23,6 +23,10 @@ export const GlobalStyles = () => {
         height: 100%;
         scroll-behavior: smooth;
       }
+      html,
+      body {
+        overflow-x: hidden;
+      }
       #__next {
         display: flex;
         flex-direction: column;

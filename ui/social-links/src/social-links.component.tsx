@@ -10,10 +10,10 @@ import { Layout }           from '@ui/layout'
 import { Link }             from '@ui/link'
 
 const SocialLinks = () => (
-  <Box width={['100%', '100%', 56]} height={[44, 44, 200]}>
+  <Box width={['100%', 330, 56]} height={[44, 44, 200]}>
     <Column width='100%'>
       <Layout flexBasis={[20, 30, 0]} />
-      <Box flexDirection={['row', 'row', 'column']}>
+      <Box flexDirection={['row', 'row', 'column']} justifyContent='space-between' height='100%'>
         <Link href='https://telegram.org/' target='_blank'>
           <Layout display={['none', 'none', 'flex']}>
             <Button size='normalSocial' variant='social'>
@@ -30,7 +30,6 @@ const SocialLinks = () => (
             </Button>
           </Layout>
         </Link>
-        <Layout flexBasis={[13, 20, 16]} />
         <Link href='https://github.com/atls-academy' target='_blank'>
           <Layout display={['none', 'none', 'flex']}>
             <Button size='normalSocial' variant='social'>
@@ -47,7 +46,6 @@ const SocialLinks = () => (
             </Button>
           </Layout>
         </Link>
-        <Layout flexBasis={[13, 20, 16]} />
         <Link href='mailto:me@atls.academy' target='_blank'>
           <Layout display={['none', 'none', 'flex']}>
             <Button size='normalSocial' variant='social'>
