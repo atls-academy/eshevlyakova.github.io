@@ -10,7 +10,7 @@ import { Layout }           from '@ui/layout'
 import { Link }             from '@ui/link'
 
 const SocialLinks = () => (
-  <Box position={['static', 'static', 'absolute']} right={[0, 0, 40]} bottom={[0, 0, 130]}>
+  <Box width={['100%', '100%', 56]} height={[44, 44, 200]}>
     <Column width='100%'>
       <Layout flexBasis={[20, 30, 0]} />
       <Box flexDirection={['row', 'row', 'column']}>
