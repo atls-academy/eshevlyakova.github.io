@@ -20,7 +20,7 @@ const SectionBanner = () => (
       flexDirection={['column', 'column', 'row']}
       justifyContent='center'
     >
-      <Column justifyContent='flex-end'>
+      <Column justifyContent='flex-end' width='100%'>
         <Layout flexBasis={[252, 332, 535]} />
         <Box width={['100%', '100%', 1116]}>
           <Column justifyContent='end'>
@@ -112,11 +112,11 @@ const SectionBanner = () => (
           </Column>
         </Box>
         <Layout flexBasis={[24, 24, 48]} flexShrink={0} />
-        <Box width={['100%', '100%', 1160]}>
+        <Box width={['100%', '100%', '90%']}>
           <Divider weight={1} backgroundColor='background.transparentGray' />
         </Box>
         <Layout flexBasis={[24, 24, 48]} flexShrink={0} />
-        <Box width={['100%', '100%', 1160]} justifyContent='space-between'>
+        <Box width={['100%', '100%', '90%']} justifyContent='space-between'>
           <Box width={['100%', '100%', 640]}>
             <Text
               fontSize={['regular', 'medium', 'semiLarge']}
@@ -140,7 +140,7 @@ const SectionBanner = () => (
       <Layout flexBasis={[0, 0, 394]} />
       <Column justifyContent={['start', 'start', 'flex-end']}>
         <SocialLinks />
-        <Layout flexBasis={[112, 112, 160]} />
+        <Layout flexBasis={[112, 112, 48]} />
       </Column>
     </Layout>
     <Layout flexBasis={[20, 20, 80]} />
