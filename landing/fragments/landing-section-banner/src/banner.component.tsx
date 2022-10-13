@@ -20,9 +20,9 @@ const SectionBanner = () => (
       flexDirection={['column', 'column', 'row']}
       justifyContent='center'
     >
-      <Column justifyContent='flex-end' width='100%'>
+      <Column justifyContent='flex-end'>
         <Layout flexBasis={[252, 332, 535]} />
-        <Box width={['100%', '100%', 1116]}>
+        <Box width={['100%', '100%', 1289]}>
           <Column justifyContent='end'>
             <Box display={['none', 'none', 'flex']}>
               <Column justifyContent='end'>
