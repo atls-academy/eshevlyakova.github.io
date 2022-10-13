@@ -112,11 +112,11 @@ const SectionBanner = () => (
           </Column>
         </Box>
         <Layout flexBasis={[24, 24, 48]} flexShrink={0} />
-        <Box width={['100%', '100%', '90%']}>
+        <Box width={['100%', '100%', '90%']} maxWidth={1160}>
           <Divider weight={1} backgroundColor='background.transparentGray' />
         </Box>
         <Layout flexBasis={[24, 24, 48]} flexShrink={0} />
-        <Box width={['100%', '100%', '90%']} justifyContent='space-between'>
+        <Box width={['100%', '100%', '90%']} maxWidth={1160} justifyContent='space-between'>
           <Box width={['100%', '100%', 640]}>
             <Text
               fontSize={['regular', 'medium', 'semiLarge']}
