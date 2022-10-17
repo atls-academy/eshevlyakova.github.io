@@ -1,0 +1,32 @@
+{
+  "name": "@landing/banner-fragment",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@ui/button": "workspace:0.0.1",
+    "@ui/divider": "workspace:0.0.1",
+    "@ui/icons": "workspace:0.0.1",
+    "@ui/layout": "workspace:0.0.1",
+    "@ui/social-links": "workspace:0.0.1",
+    "@ui/text": "workspace:0.0.1",
+    "@ui/theme": "0.0.1"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@types/node": "^18.7.14",
+    "@types/react": "18.0.21",
+    "react-intl": "^6.1.2",
+    "styled-system": "^5.1.5",
+    "styled-tools": "^1.7.2",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "next": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-intl": "*"
+  }
+}

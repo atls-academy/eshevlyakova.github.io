@@ -24,6 +24,7 @@ build/Release
 # Dependency directory
 node_modules
 .yarn-cache
+.yarn/cache
 
 # Optional npm cache directory
 .npm
@@ -45,3 +46,6 @@ dist/
 
 # JetBrains folder
 .idea
+
+landing/entrypoints/renderer/.next
+landing/entrypoints/renderer/src/.next
