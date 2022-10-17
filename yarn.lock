@@ -30,16 +30,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls-ui-generators/button@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@atls-ui-generators/button@npm:0.0.9"
+"@atls-ui-generators/button@npm:0.0.10":
+  version: 0.0.10
+  resolution: "@atls-ui-generators/button@npm:0.0.10"
   dependencies:
     "@atls-ui-generators/utils": 0.0.4
     "@atls/config-prettier": ^0.0.5
     "@atls/prettier-plugin": ^0.0.5
+    "@babel/standalone": ^7.19.5
     camelcase: ^6.3.0
+    commander: ^9.4.1
     prettier: ^2.5.1
-  checksum: a1ff038cfb2bd8f497fa5e152b330dbbd8caf13e546f49462819aae291df9c24545665797cd7fb39712f973637cc9a990fa5cbb04f4efcae4e295e7ade30f902
+  bin:
+    generate-styles: dist/generator.js
+  checksum: 2e766aed620f3694d303133a7563c07997a82e5cbe14b609841f2c81abe0d5b4577cbc1af9bf21aec9241476d78c15d9121372385f9ef8e4344bb8b00ba5fd76
   languageName: node
   linkType: hard
 
@@ -107,12 +111,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atls-ui-parts/styles@npm:0.0.4, @atls-ui-parts/styles@npm:^0.0.4":
+"@atls-ui-parts/styles@npm:0.0.4":
   version: 0.0.4
   resolution: "@atls-ui-parts/styles@npm:0.0.4"
   peerDependencies:
     styled-system: ^5.1.5
   checksum: f47f1162cb08e138257aa7b26d47fd8b48a4cd3d4c5bc4fdc4797a3dee356fe79e77ddddbf7ac55225c6245e47a20e1c34815d1dc22205dcd6d1f9231c7cbd7e
+  languageName: node
+  linkType: hard
+
+"@atls-ui-parts/styles@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@atls-ui-parts/styles@npm:0.0.1"
+  peerDependencies:
+    styled-system: ^5.1.5
+  checksum: 06a333d67bd87ec26ceb21bc48a670365fe93789e5bec457a9a389a679345693d4bf34d1557c8668c8c9a6495cddf5d38a2dedd610c3310a19f97ef72bb8f5d0
   languageName: node
   linkType: hard
 
@@ -723,6 +736,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/standalone@npm:^7.19.5":
+  version: 7.19.5
+  resolution: "@babel/standalone@npm:7.19.5"
+  checksum: ad254382c25ce8fab80b37b29fb8b097c09b78748795630ef28920f1696d92a81879eb70abd96925397c72879bb8cb0e38f86fdf2da2d9ba3a97787b09c22ed1
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.16.7, @babel/template@npm:^7.3.3":
   version: 7.16.7
   resolution: "@babel/template@npm:7.16.7"
@@ -819,15 +839,6 @@ __metadata:
   version: 9.1.0
   resolution: "@chevrotain/utils@npm:9.1.0"
   checksum: ca78c97c7c3e444431d0fafa348f0c955998cd86bc0d4bbdeaae3ff5abba8d416d69d5a4163e86cac962a392f1c325cb4a97b8b05722527da62e9b7635025e02
-  languageName: node
-  linkType: hard
-
-"@cspotcode/source-map-support@npm:^0.8.0":
-  version: 0.8.1
-  resolution: "@cspotcode/source-map-support@npm:0.8.1"
-  dependencies:
-    "@jridgewell/trace-mapping": 0.3.9
-  checksum: 5718f267085ed8edb3e7ef210137241775e607ee18b77d95aa5bd7514f47f5019aa2d82d96b3bf342ef7aa890a346fa1044532ff7cc3009e7d24fce3ce6200fa
   languageName: node
   linkType: hard
 
@@ -1473,16 +1484,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/trace-mapping@npm:0.3.9":
-  version: 0.3.9
-  resolution: "@jridgewell/trace-mapping@npm:0.3.9"
-  dependencies:
-    "@jridgewell/resolve-uri": ^3.0.3
-    "@jridgewell/sourcemap-codec": ^1.4.10
-  checksum: d89597752fd88d3f3480845691a05a44bd21faac18e2185b6f436c3b0fd0c5a859fbbd9aaa92050c4052caf325ad3e10e2e1d1b64327517471b7d51babc0ddef
-  languageName: node
-  linkType: hard
-
 "@jridgewell/trace-mapping@npm:^0.3.0":
   version: 0.3.4
   resolution: "@jridgewell/trace-mapping@npm:0.3.4"
@@ -1524,10 +1525,36 @@ __metadata:
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icons": "workspace:0.0.1"
-    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/social-links": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    "@ui/theme": 0.0.1
+    react-intl: ^6.1.2
+    styled-system: ^5.1.5
+    styled-tools: ^1.7.2
+    typescript: ^4.8.4
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/description-fragment@0.0.1, @landing/description-fragment@workspace:landing/fragments/landing-section-description":
+  version: 0.0.0-use.local
+  resolution: "@landing/description-fragment@workspace:landing/fragments/landing-section-description"
+  dependencies:
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
+    "@types/node": ^18.7.14
+    "@types/react": 18.0.21
+    "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/theme": 0.0.1
     react-intl: ^6.1.2
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -1568,9 +1595,12 @@ __metadata:
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
     "@landing/banner-fragment": 0.0.1
+    "@landing/description-fragment": 0.0.1
     "@landing/header-fragment": 0.0.1
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/theme": 0.0.1
   peerDependencies:
     next: ^12.1.0
     react: ^17.0.2
@@ -2069,34 +2099,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node10@npm:^1.0.7":
-  version: 1.0.9
-  resolution: "@tsconfig/node10@npm:1.0.9"
-  checksum: a33ae4dc2a621c0678ac8ac4bceb8e512ae75dac65417a2ad9b022d9b5411e863c4c198b6ba9ef659e14b9fb609bbec680841a2e84c1172df7a5ffcf076539df
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node12@npm:^1.0.7":
-  version: 1.0.11
-  resolution: "@tsconfig/node12@npm:1.0.11"
-  checksum: 5ce29a41b13e7897a58b8e2df11269c5395999e588b9a467386f99d1d26f6c77d1af2719e407621412520ea30517d718d5192a32403b8dfcc163bf33e40a338a
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node14@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "@tsconfig/node14@npm:1.0.3"
-  checksum: 19275fe80c4c8d0ad0abed6a96dbf00642e88b220b090418609c4376e1cef81bf16237bf170ad1b341452feddb8115d8dd2e5acdfdea1b27422071163dc9ba9d
-  languageName: node
-  linkType: hard
-
-"@tsconfig/node16@npm:^1.0.2":
-  version: 1.0.3
-  resolution: "@tsconfig/node16@npm:1.0.3"
-  checksum: 3a8b657dd047495b7ad23437d6afd20297ce90380ff0bdee93fc7d39a900dbd8d9e26e53ff6b465e7967ce2adf0b218782590ce9013285121e6a5928fbd6819f
-  languageName: node
-  linkType: hard
-
 "@types/babel__core@npm:^7.1.14":
   version: 7.1.19
   resolution: "@types/babel__core@npm:7.1.19"
@@ -2499,9 +2501,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ui/button@workspace:ui/button"
   dependencies:
-    "@atls-ui-generators/button": ^0.0.9
+    "@atls-ui-generators/button": 0.0.10
     "@atls-ui-parts/button": ^0.0.10
-    "@atls-ui-parts/styles": ^0.0.4
+    "@atls-ui-parts/styles": ^0.0.1
     "@emotion/react": ^11.4.1
     "@emotion/styled": ^11.3.0
     "@types/styled-system": ^5
@@ -2512,7 +2514,6 @@ __metadata:
     react-dom: ^17.0.2
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-    ts-node: ^10.7.0
   peerDependencies:
     "@emotion/react": "*"
     "@emotion/styled": "*"
@@ -2701,7 +2702,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/theme@workspace:0.0.1, @ui/theme@workspace:ui/theme":
+"@ui/theme@0.0.1, @ui/theme@workspace:0.0.1, @ui/theme@workspace:ui/theme":
   version: 0.0.0-use.local
   resolution: "@ui/theme@workspace:ui/theme"
   dependencies:
@@ -3374,28 +3375,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-walk@npm:^8.1.1":
-  version: 8.2.0
-  resolution: "acorn-walk@npm:8.2.0"
-  checksum: 1715e76c01dd7b2d4ca472f9c58968516a4899378a63ad5b6c2d668bba8da21a71976c14ec5f5b75f887b6317c4ae0b897ab141c831d741dc76024d8745f1ad1
-  languageName: node
-  linkType: hard
-
-"acorn@npm:^8.4.1, acorn@npm:^8.7.1, acorn@npm:^8.8.0":
-  version: 8.8.0
-  resolution: "acorn@npm:8.8.0"
-  bin:
-    acorn: bin/acorn
-  checksum: 7270ca82b242eafe5687a11fea6e088c960af712683756abf0791b68855ea9cace3057bd5e998ffcef50c944810c1e0ca1da526d02b32110e13c722aa959afdc
-  languageName: node
-  linkType: hard
-
 "acorn@npm:^8.5.0":
   version: 8.7.0
   resolution: "acorn@npm:8.7.0"
   bin:
     acorn: bin/acorn
   checksum: e0f79409d68923fbf1aa6d4166f3eedc47955320d25c89a20cc822e6ba7c48c5963d5bc657bc242d68f7a4ac9faf96eef033e8f73656da6c640d4219935fdfd0
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.7.1, acorn@npm:^8.8.0":
+  version: 8.8.0
+  resolution: "acorn@npm:8.8.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 7270ca82b242eafe5687a11fea6e088c960af712683756abf0791b68855ea9cace3057bd5e998ffcef50c944810c1e0ca1da526d02b32110e13c722aa959afdc
   languageName: node
   linkType: hard
 
@@ -4066,6 +4060,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^9.4.1":
+  version: 9.4.1
+  resolution: "commander@npm:9.4.1"
+  checksum: bfb18e325a5bdf772763c2213d5c7d9e77144d944124e988bcd8e5e65fb6d45d5d4e86b09155d0f2556c9a59c31e428720e57968bcd050b2306e910a0bf3cf13
+  languageName: node
+  linkType: hard
+
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -4099,13 +4100,6 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.10.0
   checksum: 4be63e7117955fd88333d7460e4c466a90f556df6ef34efd59034d2463484e339666c41f02b523d574a797ec61f4a91918c5b89a316db2ea2f834e0d2d09465b
-  languageName: node
-  linkType: hard
-
-"create-require@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "create-require@npm:1.1.1"
-  checksum: a9a1503d4390d8b59ad86f4607de7870b39cad43d929813599a23714831e81c520bddf61bcdd1f8e30f05fd3a2b71ae8538e946eb2786dc65c2bbc520f692eff
   languageName: node
   linkType: hard
 
@@ -8008,44 +8002,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.7.0":
-  version: 10.9.1
-  resolution: "ts-node@npm:10.9.1"
-  dependencies:
-    "@cspotcode/source-map-support": ^0.8.0
-    "@tsconfig/node10": ^1.0.7
-    "@tsconfig/node12": ^1.0.7
-    "@tsconfig/node14": ^1.0.0
-    "@tsconfig/node16": ^1.0.2
-    acorn: ^8.4.1
-    acorn-walk: ^8.1.1
-    arg: ^4.1.0
-    create-require: ^1.1.0
-    diff: ^4.0.1
-    make-error: ^1.1.1
-    v8-compile-cache-lib: ^3.0.1
-    yn: 3.1.1
-  peerDependencies:
-    "@swc/core": ">=1.2.50"
-    "@swc/wasm": ">=1.2.50"
-    "@types/node": "*"
-    typescript: ">=2.7"
-  peerDependenciesMeta:
-    "@swc/core":
-      optional: true
-    "@swc/wasm":
-      optional: true
-  bin:
-    ts-node: dist/bin.js
-    ts-node-cwd: dist/bin-cwd.js
-    ts-node-esm: dist/bin-esm.js
-    ts-node-script: dist/bin-script.js
-    ts-node-transpile-only: dist/bin-transpile.js
-    ts-script: dist/bin-script-deprecated.js
-  checksum: 090adff1302ab20bd3486e6b4799e90f97726ed39e02b39e566f8ab674fd5bd5f727f43615debbfc580d33c6d9d1c6b1b3ce7d8e3cca3e20530a145ffa232c35
-  languageName: node
-  linkType: hard
-
 "tslib@npm:2.4.0, tslib@npm:^2.1.0, tslib@npm:^2.3.1":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
@@ -8166,13 +8122,6 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
-  languageName: node
-  linkType: hard
-
-"v8-compile-cache-lib@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "v8-compile-cache-lib@npm:3.0.1"
-  checksum: 78089ad549e21bcdbfca10c08850022b22024cdcc2da9b168bcf5a73a6ed7bf01a9cebb9eac28e03cd23a684d81e0502797e88f3ccd27a32aeab1cfc44c39da0
   languageName: node
   linkType: hard
 

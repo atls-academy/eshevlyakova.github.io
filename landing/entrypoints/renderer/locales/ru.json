@@ -1,12 +1,24 @@
 {
   "landing_section_banner.we_teach": "Обучаем",
   "landing_section_banner.professionals": "профессионалов",
-  "landing_section_banner.for_the_revolution_in": "для революции в",
+  "landing_section_banner.for_the_revolution": "для революции",
+  "landing_section_banner.in": "в",
   "landing_section_banner.it": "it",
-  "landing_section_banner.for_the_revolution_in_it": "для революции в IT",
+  "landing_section_banner.in_it": "в IT",
   "landing_section_banner.we_dont_teach_programming": "Мы не учим программированию и дизайну, мы учим мышлению способному релизовывывать невозможные идеи.",
   "landing_section_banner.computer_mouse_icon": "Иконка компьютерной мыши",
   "social_links.write_telegram": "Написать в телеграме",
   "social_links.view_profile_github": "Посмотреть профиль на GitHub",
-  "social_links.write_email": "Написать email письмо"
+  "social_links.write_email": "Написать email письмо",
+  "landing_section_description.digital": "Digital",
+  "landing_section_description.its_getting_more_crowded": "становится всё более многолюдным, востребованность по направлениям при этом не снижается",
+  "landing_section_description.but": "Но",
+  "landing_section_description.specialists": "специалистов",
+  "landing_section_description.ready_to_take_responsibility": ", готовых нести ответсвенность за свои решения по прежднему мало",
+  "landing_section_description.atlantis_academy": "Atlantis Academy",
+  "landing_section_description.educates_and_forms": "обучает и формирует",
+  "landing_section_description.engineers": "инженеров",
+  "landing_section_description.and": "и",
+  "landing_section_description.architects": "архитекторов",
+  "landing_section_description.not_programmers_and_designers": ", а не программистов и дизайнеров"
 }
