@@ -45,3 +45,6 @@ dist/
 
 # JetBrains folder
 .idea
+
+landing/entrypoints/renderer/.next
+landing/entrypoints/renderer/src/.next
