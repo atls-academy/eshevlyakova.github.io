@@ -6,7 +6,7 @@ import { Layout } from '@ui/layout'
 import { Logo }   from '@ui/logo'
 
 const HeaderBlock = () => (
-  <Box backgroundColor='background.gray'>
+  <Box>
     <Column width='100%' alignItems='center'>
       <Layout flexBasis={[20, 22, 30]} />
       <Box width='100%'>

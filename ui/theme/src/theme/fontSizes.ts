@@ -6,6 +6,7 @@ const fontSizes = {
   moderate: 28,
   semiEnlarged: 38,
   enlarged: 40,
+  massive: 44,
   semiBig: 60,
   big: 68,
   semiIncreased: 70,

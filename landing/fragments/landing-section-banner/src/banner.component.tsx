@@ -10,9 +10,10 @@ import { Layout }            from '@ui/layout'
 import { SocialLinks }       from '@ui/social-links'
 import { Space }             from '@ui/text'
 import { Text }              from '@ui/text'
+import { theme }             from '@ui/theme'
 
 const SectionBanner = () => (
-  <Box backgroundColor='background.gray' height={['100%', '100%', '89vh']}>
+  <Box height={['100%', '100%', '89vh']}>
     <Layout flexBasis={[20, 20, 230]} />
     <Layout
       width='100%'
@@ -50,19 +51,31 @@ const SectionBanner = () => (
                     fontWeight='normal'
                     fontSize={['semiGiant', 'semiIncreased', 'giant']}
                     lineHeight={['small', 'small', 'extra']}
-                    color='text.white'
+                    color='text.darkPurpleBlue'
                   >
                     <FormattedMessage
-                      id='landing_section_banner.for_the_revolution_in'
-                      defaultMessage='для революции в'
+                      id='landing_section_banner.for_the_revolution'
+                      defaultMessage='для революции'
                     />
                     <Space />
                   </Text>
+                  <Text
+                    fontWeight='normal'
+                    fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                    lineHeight={['small', 'small', 'extra']}
+                    color='text.white'
+                  >
+                    <FormattedMessage id='landing_section_banner.in' defaultMessage='в' />
+                    <Space />
+                  </Text>
                   <Box
-                    borderRadius='24px'
-                    backgroundColor='background.lightGray'
+                    borderRadius='bigger'
                     width='130px'
                     justifyContent='center'
+                    border='1px solid'
+                    borderColor={theme.colors.border.lightPurple}
+                    background={theme.backgrounds.whileGradient}
+                    style={{ backdropFilter: 'blur(2px)' }}
                   >
                     <Text
                       fontSize={['semiIncreased', 'semiBig', 'increased']}
@@ -100,12 +113,20 @@ const SectionBanner = () => (
                 fontWeight='normal'
                 fontSize={['semiEnlarged', 'big', 'big']}
                 lineHeight='small'
-                color='text.white'
+                color='text.darkPurpleBlue'
               >
                 <FormattedMessage
-                  id='landing_section_banner.for_the_revolution_in_it'
-                  defaultMessage='для революции в IT'
+                  id='landing_section_banner.for_the_revolution'
+                  defaultMessage='для революции'
                 />
+              </Text>
+              <Text
+                fontWeight='normal'
+                fontSize={['semiEnlarged', 'big', 'big']}
+                lineHeight='small'
+                color='text.white'
+              >
+                <FormattedMessage id='landing_section_banner.in_it' defaultMessage='в IT' />
               </Text>
               <Layout flexBasis='20px' />
             </Column>
@@ -141,7 +162,7 @@ const SectionBanner = () => (
       <Layout flexBasis={[0, 0, 334]} />
       <Column justifyContent={['start', 'start', 'flex-end']}>
         <SocialLinks />
-        <Layout flexBasis={[112, 112, 48]} />
+        <Layout flexBasis={[84, 112, 48]} />
       </Column>
     </Layout>
     <Layout flexBasis={[0, 0, 30]} flexShrink={0} />

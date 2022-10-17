@@ -4,7 +4,10 @@
   "main": "src/index.ts",
   "dependencies": {
     "@landing/banner-fragment": "0.0.1",
-    "@landing/header-fragment": "0.0.1"
+    "@landing/description-fragment": "0.0.1",
+    "@landing/header-fragment": "0.0.1",
+    "@ui/layout": "workspace:0.0.1",
+    "@ui/theme": "0.0.1"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.4",
