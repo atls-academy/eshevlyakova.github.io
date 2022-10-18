@@ -13,7 +13,7 @@ import { baseStyles }       from './button.styles'
 import { shapeStyles }      from './button.styles'
 import { contentStyles }    from './button.styles'
 import { fillStyles }       from './button.styles'
-import { appearanceStyles } from './styles/appearance/button.appearance-styles'
+import { appearanceStyles } from './styles'
 
 export const ButtonElement = styled('button')(
   baseStyles,

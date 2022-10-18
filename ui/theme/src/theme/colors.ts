@@ -45,11 +45,6 @@ const colors = {
       },
     },
   },
-  border: {
-    lightGray: 'rgba(15,76,139,0.08)',
-    transparent: 'rgba(255, 255, 255, 0.3)',
-    lightPurple: 'rgb(143, 126, 244)',
-  },
   text: {
     white: 'rgba(255,255,255,1)',
     darkPurpleBlue: '#3A375D',

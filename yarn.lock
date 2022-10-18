@@ -1528,7 +1528,6 @@ __metadata:
     "@ui/layout": "workspace:0.0.1"
     "@ui/social-links": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
-    "@ui/theme": 0.0.1
     react-intl: ^6.1.2
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -1554,7 +1553,6 @@ __metadata:
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
-    "@ui/theme": 0.0.1
     react-intl: ^6.1.2
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
@@ -1600,11 +1598,12 @@ __metadata:
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/layout": "workspace:0.0.1"
-    "@ui/theme": 0.0.1
+    styled-system: ^5.1.5
   peerDependencies:
     next: ^12.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
+    styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 
@@ -2702,7 +2701,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ui/theme@0.0.1, @ui/theme@workspace:0.0.1, @ui/theme@workspace:ui/theme":
+"@ui/theme@workspace:0.0.1, @ui/theme@workspace:ui/theme":
   version: 0.0.0-use.local
   resolution: "@ui/theme@workspace:ui/theme"
   dependencies:
