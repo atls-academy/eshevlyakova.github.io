@@ -50,7 +50,7 @@ const colors = {
     darkPurpleBlue: '#3A375D',
   },
   background: {
-    gray: '#616161',
+    gray: 'rgb(97, 97, 97)',
     lightGray: 'rgba(255, 255, 255, 0.08)',
     transparentGray: 'rgba(255, 255, 255, 0.25)',
   },

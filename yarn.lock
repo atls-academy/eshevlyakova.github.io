@@ -1519,9 +1519,9 @@ __metadata:
   resolution: "@landing/banner-fragment@workspace:landing/fragments/landing-section-banner"
   dependencies:
     "@emotion/react": ^11.10.4
-    "@emotion/styled": ^11.10.4
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
+    "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
     "@ui/icons": "workspace:0.0.1"
@@ -1529,12 +1529,10 @@ __metadata:
     "@ui/social-links": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
-    styled-system: ^5.1.5
     styled-tools: ^1.7.2
     typescript: ^4.8.4
   peerDependencies:
     "@emotion/react": "*"
-    "@emotion/styled": "*"
     next: "*"
     react: "*"
     react-dom: "*"
@@ -1547,19 +1545,17 @@ __metadata:
   resolution: "@landing/description-fragment@workspace:landing/fragments/landing-section-description"
   dependencies:
     "@emotion/react": ^11.10.4
-    "@emotion/styled": ^11.10.4
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
+    "@ui/background": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
-    styled-system: ^5.1.5
     styled-tools: ^1.7.2
     typescript: ^4.8.4
   peerDependencies:
     "@emotion/react": "*"
-    "@emotion/styled": "*"
     next: "*"
     react: "*"
     react-dom: "*"
@@ -1591,13 +1587,12 @@ __metadata:
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
   dependencies:
     "@emotion/react": ^11.10.4
-    "@emotion/styled": ^11.10.4
     "@landing/banner-fragment": 0.0.1
     "@landing/header-fragment": 0.0.1
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
+    "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
-    styled-system: ^5.1.5
   peerDependencies:
     next: "*"
     react: "*"
@@ -2509,6 +2504,27 @@ __metadata:
   checksum: f0673cbfc08e17239dc58952a88350d6c4db04a027a28a06fbad27d87b670e909f9cd9e66f9c64cebdd5071d1096261e33454a55868395f125297e5c50992ca8
   languageName: node
   linkType: hard
+
+"@ui/background@workspace:0.0.1, @ui/background@workspace:ui/background":
+  version: 0.0.0-use.local
+  resolution: "@ui/background@workspace:ui/background"
+  dependencies:
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
+    "@types/styled-system": ^5
+    next: 12.1.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
+    styled-system: "*"
+  languageName: unknown
+  linkType: soft
 
 "@ui/button@workspace:0.0.1, @ui/button@workspace:ui/button":
   version: 0.0.0-use.local
