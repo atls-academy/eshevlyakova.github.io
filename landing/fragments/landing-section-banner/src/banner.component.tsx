@@ -55,27 +55,31 @@ const SectionBanner = () => (
                   </Text>
                 </Row>
                 <Row>
-                  <Text
-                    fontWeight='normal'
-                    fontSize={['semiGiant', 'semiIncreased', 'giant']}
-                    lineHeight={['small', 'small', 'extra']}
-                    color='text.darkPurpleBlue'
-                  >
-                    <FormattedMessage
-                      id='landing_section_banner.for_the_revolution'
-                      defaultMessage='для революции'
-                    />
-                    <Space />
-                  </Text>
-                  <Text
-                    fontWeight='normal'
-                    fontSize={['semiGiant', 'semiIncreased', 'giant']}
-                    lineHeight={['small', 'small', 'extra']}
-                    color='text.white'
-                  >
-                    <FormattedMessage id='landing_section_banner.in' defaultMessage='в' />
-                    <Space />
-                  </Text>
+                  <Box>
+                    <Text
+                      fontWeight='normal'
+                      fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                      lineHeight={['small', 'small', 'extra']}
+                      color='text.darkPurpleBlue'
+                    >
+                      <FormattedMessage
+                        id='landing_section_banner.for_the_revolution'
+                        defaultMessage='для революции'
+                      />
+                      <Space />
+                    </Text>
+                  </Box>
+                  <Box>
+                    <Text
+                      fontWeight='normal'
+                      fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                      lineHeight={['small', 'small', 'extra']}
+                      color='text.white'
+                    >
+                      <FormattedMessage id='landing_section_banner.in' defaultMessage='в' />
+                      <Space />
+                    </Text>
+                  </Box>
                   <Background gradient='whileGradient' radius='bigger'>
                     <Box
                       borderRadius='bigger'
