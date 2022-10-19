@@ -80,7 +80,6 @@ const SectionBanner = () => {
                     </Text>
                     <Background gradient='whileGradient' radius='bigger'>
                       <Box
-                        overflow='hidden'
                         borderRadius='bigger'
                         width='130px'
                         justifyContent='center'
