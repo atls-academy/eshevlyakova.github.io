@@ -47,7 +47,7 @@ const colors = {
   },
   text: {
     white: 'rgba(255,255,255,1)',
-    darkPurpleBlue: '#3A375D',
+    darkPurpleBlue: 'rgb(58, 55, 93)',
   },
   background: {
     gray: 'rgb(97, 97, 97)',
