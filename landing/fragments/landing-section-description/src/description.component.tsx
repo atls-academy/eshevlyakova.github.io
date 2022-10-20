@@ -17,7 +17,7 @@ const SectionDescription = () => (
         <Layout flexBasis={[0, 0, 160]} />
         <Box flexWrap='wrap'>
           <Text
-            display='inline-block'
+            display='inline'
             fontWeight='normal'
             fontSize={['moderate', 'semiEnlarged', 'massive']}
             lineHeight='primary'
@@ -40,7 +40,7 @@ const SectionDescription = () => (
             <Box
               width={[52, 62, 76]}
               height={[36, 43, 52]}
-              display='inline-block'
+              display='inline-flex'
               verticalAlign='middle'
             >
               <ImageBlock width='100%' height='100%' src='/circle-section-2.png' />
@@ -67,7 +67,7 @@ const SectionDescription = () => (
             <Box
               width={[52, 62, 76]}
               height={[36, 43, 52]}
-              display='inline-block'
+              display='inline-flex'
               verticalAlign='middle'
             >
               <ImageBlock width='100%' height='100%' src='/circle-section-2.png' />
@@ -77,7 +77,7 @@ const SectionDescription = () => (
         <Layout flexBasis={[24, 24, 40]} />
         <Box flexWrap='wrap'>
           <Text
-            display='inline-block'
+            display='inline'
             fontWeight='normal'
             fontSize={['moderate', 'semiEnlarged', 'massive']}
             lineHeight='primary'
@@ -133,7 +133,7 @@ const SectionDescription = () => (
             <Box
               width={[52, 62, 76]}
               height={[36, 43, 52]}
-              display='inline-block'
+              display='inline-flex'
               verticalAlign='middle'
             >
               <ImageBlock width='100%' height='100%' src='/circle-section-2.png' />

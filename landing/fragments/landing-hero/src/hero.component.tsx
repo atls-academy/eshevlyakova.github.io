@@ -9,7 +9,7 @@ import { Column }        from '@ui/layout'
 const Hero = () => (
   <>
     <Background
-      display={['none', 'none', 'block']}
+      display={['none', 'none', 'flex']}
       gradient='purpleGradientWithBigImage'
       backgroundSize='100% 100%'
       backgroundRepeat='no-repeat'
@@ -22,7 +22,7 @@ const Hero = () => (
       </Box>
     </Background>
     <Background
-      display={['none', 'block', 'none']}
+      display={['none', 'flex', 'none']}
       gradient='purpleGradientWithSmallImage'
       backgroundSize='cover'
       backgroundPosition='top center'
@@ -36,7 +36,7 @@ const Hero = () => (
       </Box>
     </Background>
     <Background
-      display={['block', 'none', 'none']}
+      display={['flex', 'none', 'none']}
       gradient='purpleGradientWithSmallImage'
       backgroundSize='contain'
       backgroundPosition='top center'
