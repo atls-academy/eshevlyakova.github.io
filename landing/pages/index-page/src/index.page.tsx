@@ -1,12 +1,12 @@
-import React             from 'react'
+import React                  from 'react'
 
-import { SectionBanner } from '@landing/banner-fragment'
-import { HeaderBlock }   from '@landing/header-fragment'
+import { SectionDescription } from '@landing/description-fragment'
+import { Hero }               from '@landing/hero-fragment'
 
 export const HomePage = () => (
   <>
-    <HeaderBlock />
-    <SectionBanner />
+    <Hero />
+    <SectionDescription />
   </>
 )
 

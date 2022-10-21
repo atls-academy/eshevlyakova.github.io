@@ -2,22 +2,22 @@ const colors = {
   button: {
     social: {
       default: {
-        background: 'rgba(255, 255, 255, 0.15)',
+        background: 'rgba(255, 255, 255, 0.2)',
         font: 'rgb(255,255,255)',
         border: 'transparent',
       },
       hover: {
-        background: 'rgba(255, 255, 255, 0.25)',
+        background: 'rgba(255, 255, 255, 0.35)',
         font: 'rgb(255,255,255)',
         border: 'transparent',
       },
       pressed: {
-        background: 'rgba(255, 255, 255, 0.25)',
+        background: 'rgba(255, 255, 255, 0.5)',
         font: 'rgb(255,255,255)',
         border: 'transparent',
       },
       disabled: {
-        background: 'rgba(255, 255, 255, 0.15)',
+        background: 'rgba(255, 255, 255, 0.1)',
         font: 'rgb(255,255,255)',
         border: 'transparent',
       },
@@ -45,15 +45,12 @@ const colors = {
       },
     },
   },
-  border: {
-    lightGray: 'rgba(15,76,139,0.08)',
-    transparent: 'rgba(255, 255, 255, 0.3)',
-  },
   text: {
     white: 'rgba(255,255,255,1)',
+    darkPurpleBlue: 'rgb(58, 55, 93)',
   },
   background: {
-    gray: '#616161',
+    gray: 'rgb(97, 97, 97)',
     lightGray: 'rgba(255, 255, 255, 0.08)',
     transparentGray: 'rgba(255, 255, 255, 0.25)',
   },
