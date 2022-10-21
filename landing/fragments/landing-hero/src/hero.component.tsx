@@ -9,17 +9,27 @@ import { Column }        from '@ui/layout'
 const Hero = () => (
   <>
     <Background
+      position='relative'
       display={['none', 'none', 'flex']}
       gradient='purpleGradientWithBigImage'
-      backgroundSize='100% 100%'
+      backgroundSize='contain, cover'
       backgroundRepeat='no-repeat'
+      backgroundPosition='right top -20px, 0 0'
     >
-      <Box width='100%'>
+      <Box width='100%' zIndex={1}>
         <Column width='100%'>
           <HeaderBlock />
           <SectionBanner />
         </Column>
       </Box>
+      <Background
+        position='absolute'
+        bottom={0}
+        width='100%'
+        height={200}
+        gradient='transparentPurple'
+        backgroundSize='cover'
+      />
     </Background>
     <Background
       display={['none', 'flex', 'none']}
