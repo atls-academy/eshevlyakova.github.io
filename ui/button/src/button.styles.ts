@@ -30,6 +30,48 @@ const transparentStyles = createShapeStyles({
   paddingRight: 25,
 })
 
+const normalAllMaterialsStyles = createShapeStyles({
+  size: 72,
+  rounding: prop('theme.radii.bigger') as unknown as number,
+  paddingLeft: 24,
+  paddingRight: 12,
+})
+
+const wideAllMaterialsStyles = createShapeStyles({
+  size: 56,
+  rounding: prop('theme.radii.big') as unknown as number,
+  paddingLeft: 16,
+  paddingRight: 12,
+})
+
+const smallAllCoursesStyles = createShapeStyles({
+  size: 40,
+  rounding: prop('theme.radii.medium') as unknown as number,
+  paddingLeft: 12,
+  paddingRight: 6,
+})
+
+const normalAllCoursesStyles = createShapeStyles({
+  size: 56,
+  rounding: prop('theme.radii.big') as unknown as number,
+  paddingLeft: 20,
+  paddingRight: 8,
+})
+
+const normalAdmissionProcessStyles = createShapeStyles({
+  size: 80,
+  rounding: prop('theme.radii.bigger') as unknown as number,
+  paddingLeft: 24,
+  paddingRight: 16,
+})
+
+const smallAdmissionProcessStyles = createShapeStyles({
+  size: 56,
+  rounding: prop('theme.radii.big') as unknown as number,
+  paddingLeft: 16,
+  paddingRight: 12,
+})
+
 export const baseStyles = createBaseStyles()
 export const contentStyles = createContentStyles()
 
@@ -37,4 +79,10 @@ export const shapeStyles = switchProp(prop('size', 'normal'), {
   normalSocial: normalSocialStyles,
   wideSocial: wideSocialStyles,
   transparent: transparentStyles,
+  normalAllMaterials: normalAllMaterialsStyles,
+  wideAllMaterials: wideAllMaterialsStyles,
+  smallAllCourses: smallAllCoursesStyles,
+  normalAllCourses: normalAllCoursesStyles,
+  normalAdmissionProcess: normalAdmissionProcessStyles,
+  smallAdmissionProcess: smallAdmissionProcessStyles,
 })

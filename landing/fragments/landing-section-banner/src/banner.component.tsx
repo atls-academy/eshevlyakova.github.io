@@ -31,7 +31,7 @@ const SectionBanner = () => (
                 <Row>
                   <Text
                     fontWeight='normal'
-                    fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                    fontSize='giant'
                     lineHeight={['small', 'small', 'extra']}
                     color='text.white'
                   >
@@ -44,7 +44,7 @@ const SectionBanner = () => (
                 <Row>
                   <Text
                     fontWeight='normal'
-                    fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                    fontSize='giant'
                     lineHeight={['small', 'small', 'extra']}
                     color='text.white'
                   >
@@ -58,7 +58,7 @@ const SectionBanner = () => (
                   <Box>
                     <Text
                       fontWeight='normal'
-                      fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                      fontSize='giant'
                       lineHeight={['small', 'small', 'extra']}
                       color='text.darkPurpleBlue'
                     >
@@ -72,7 +72,7 @@ const SectionBanner = () => (
                   <Box>
                     <Text
                       fontWeight='normal'
-                      fontSize={['semiGiant', 'semiIncreased', 'giant']}
+                      fontSize='giant'
                       lineHeight={['small', 'small', 'extra']}
                       color='text.white'
                     >
@@ -83,14 +83,14 @@ const SectionBanner = () => (
                   <Background gradient='darkPurpleShadowGradient' radius='bigger'>
                     <Box
                       borderRadius='bigger'
-                      width='130px'
+                      width='148px'
                       justifyContent='center'
                       border='thinLightPurple'
                       style={{ backdropFilter: 'blur(2px)' }}
                     >
                       <Text
-                        fontSize={['semiIncreased', 'semiBig', 'increased']}
-                        lineHeight='medium'
+                        fontSize='giant'
+                        lineHeight='extra'
                         textTransform='uppercase'
                         color='text.white'
                       >
@@ -105,7 +105,7 @@ const SectionBanner = () => (
               <Row>
                 <Text
                   fontWeight='normal'
-                  fontSize={['semiEnlarged', 'big', 'big']}
+                  fontSize={['increased', 'massive', 'massive']}
                   lineHeight='small'
                   color='text.white'
                 >
@@ -115,7 +115,7 @@ const SectionBanner = () => (
               <Row>
                 <Text
                   fontWeight='normal'
-                  fontSize={['semiEnlarged', 'big', 'big']}
+                  fontSize={['increased', 'massive', 'massive']}
                   lineHeight='small'
                   color='text.white'
                 >
@@ -128,7 +128,7 @@ const SectionBanner = () => (
               <Row>
                 <Text
                   fontWeight='normal'
-                  fontSize={['semiEnlarged', 'big', 'big']}
+                  fontSize={['increased', 'massive', 'massive']}
                   lineHeight='small'
                   color='text.darkPurpleBlue'
                 >
@@ -141,7 +141,7 @@ const SectionBanner = () => (
               <Row>
                 <Text
                   fontWeight='normal'
-                  fontSize={['semiEnlarged', 'big', 'big']}
+                  fontSize={['increased', 'massive', 'massive']}
                   lineHeight='small'
                   color='text.white'
                 >
@@ -160,7 +160,7 @@ const SectionBanner = () => (
         <Box width='100%' maxWidth={1160} justifyContent='space-between'>
           <Box width={['100%', '100%', 640]}>
             <Text
-              fontSize={['regular', 'medium', 'semiLarge']}
+              fontSize={['semiMedium', 'semiRegular', 'regular']}
               lineHeight='primary'
               color='text.white'
             >
@@ -171,7 +171,7 @@ const SectionBanner = () => (
             </Text>
           </Box>
           <Box display={['none', 'none', 'flex']}>
-            <Button size='transparent' variant='transparent'>
+            <Button size='transparent' variant='borderTransparentWhite'>
               <ComputerMouseIcon width={20} height={20} />
             </Button>
           </Box>

@@ -3,6 +3,7 @@ import styled         from '@emotion/styled'
 import { background } from 'styled-system'
 import { layout }     from 'styled-system'
 import { position }   from 'styled-system'
+import { border }     from 'styled-system'
 
 const Background = styled.div(
   ({ theme, gradient, radius }) => ({
@@ -11,6 +12,7 @@ const Background = styled.div(
   }),
   background,
   layout,
-  position
+  position,
+  border
 )
 export { Background }

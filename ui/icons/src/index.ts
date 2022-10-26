@@ -1,4 +1,7 @@
 export * from './ComputerMouseIcon'
+export * from './DarkPurpleArrowBottomIcon'
+export * from './DarkPurpleArrowRightIcon'
 export * from './IconEmailIcon'
 export * from './IconGithubIcon'
 export * from './IconTelegramIcon'
+export * from './WhitePlusIcon'

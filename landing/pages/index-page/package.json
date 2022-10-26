@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
-    "@landing/description-fragment": "0.0.1",
-    "@landing/hero-fragment": "0.0.1"
+    "@landing/courses-fragment": "workspace:0.0.1",
+    "@landing/description-fragment": "workspace:0.0.1",
+    "@landing/hero-fragment": "workspace:0.0.1"
   },
   "devDependencies": {
     "@types/node": "^18.7.14",
