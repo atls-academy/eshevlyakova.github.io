@@ -18,12 +18,12 @@ const HeaderBlock = () => (
       <Box width='100%'>
         <Layout flexBasis={[10, 15, 30]} />
         <Row justifyContent={['space-between', 'space-between', 'start']}>
-          <Box width={[36, 40, 56]}>
+          <Box width={[36, 40, 56]} flexShrink={0}>
             <Logo />
           </Box>
           <Layout flexBasis={[0, 0, 241]} flexGrow={1} />
-          <Box width={1166} display={['none', 'none', 'flex']}>
-            <Link href='/' width='19%'>
+          <Box display={['none', 'none', 'flex']}>
+            <Link href='/' width={217}>
               <Box
                 height={56}
                 alignItems='center'
@@ -41,7 +41,7 @@ const HeaderBlock = () => (
               </Box>
             </Link>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width='19%'>
+            <Link href='/' width={217}>
               <Box
                 height={56}
                 alignItems='center'
@@ -59,7 +59,7 @@ const HeaderBlock = () => (
               </Box>
             </Link>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width='19%'>
+            <Link href='/' width={217}>
               <Box
                 height={56}
                 alignItems='center'
@@ -77,7 +77,7 @@ const HeaderBlock = () => (
               </Box>
             </Link>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width='19%'>
+            <Link href='/' width={217}>
               <Box
                 height={56}
                 alignItems='center'
@@ -95,7 +95,7 @@ const HeaderBlock = () => (
               </Box>
             </Link>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width='19%'>
+            <Link href='/' width={217}>
               <Box
                 height={56}
                 alignItems='center'
@@ -113,6 +113,24 @@ const HeaderBlock = () => (
               </Box>
             </Link>
           </Box>
+          <Box display={['none', 'flex', 'none']}>
+            <Button size='normalAllCourses' variant='transparentWhite'>
+              <Text fontWeight='normal' fontSize='medium' lineHeight='default' color='text.white'>
+                <FormattedMessage id='landing_section_courses.courses' defaultMessage='Курсы' />
+              </Text>
+              <Layout flexBasis={4} flexShrink={0} />
+              <Box
+                width={40}
+                height={40}
+                justifyContent='center'
+                alignItems='center'
+                borderRadius='medium'
+                backgroundColor='white'
+              >
+                <DarkPurpleArrowBottomIcon />
+              </Box>
+            </Button>
+          </Box>
           <Box display={['flex', 'none', 'none']}>
             <Button size='smallAllCourses' variant='transparentWhite'>
               <Text
@@ -129,24 +147,6 @@ const HeaderBlock = () => (
                 justifyContent='center'
                 alignItems='center'
                 borderRadius='micro'
-                backgroundColor='white'
-              >
-                <DarkPurpleArrowBottomIcon />
-              </Box>
-            </Button>
-          </Box>
-          <Box display={['none', 'flex', 'none']}>
-            <Button size='normalAllCourses' variant='transparentWhite'>
-              <Text fontWeight='normal' fontSize='medium' lineHeight='default' color='text.white'>
-                <FormattedMessage id='landing_section_courses.courses' defaultMessage='Курсы' />
-              </Text>
-              <Layout flexBasis={4} flexShrink={0} />
-              <Box
-                width={40}
-                height={40}
-                justifyContent='center'
-                alignItems='center'
-                borderRadius='medium'
                 backgroundColor='white'
               >
                 <DarkPurpleArrowBottomIcon />
