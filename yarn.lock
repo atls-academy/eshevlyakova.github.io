@@ -1546,7 +1546,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@types/node": ^18.7.14
-    "@types/react": 18.0.21
+    "@types/react": 17.0.47
     "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
@@ -1571,7 +1571,7 @@ __metadata:
   resolution: "@landing/courses-fragment@workspace:landing/fragments/landing-section-courses"
   dependencies:
     "@types/node": ^18.7.14
-    "@types/react": 18.0.21
+    "@types/react": 17.0.47
     "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
@@ -1598,7 +1598,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@types/node": ^18.7.14
-    "@types/react": 18.0.21
+    "@types/react": 17.0.47
     "@ui/background": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -1621,7 +1621,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@types/node": ^18.7.14
-    "@types/react": 18.0.21
+    "@types/react": 17.0.47
     "@ui/button": "workspace:0.0.1"
     "@ui/icons": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -1648,7 +1648,7 @@ __metadata:
     "@landing/banner-fragment": 0.0.1
     "@landing/header-fragment": 0.0.1
     "@types/node": ^18.7.14
-    "@types/react": 18.0.21
+    "@types/react": 17.0.47
     "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
   peerDependencies:
@@ -1667,7 +1667,7 @@ __metadata:
     "@landing/description-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@types/node": ^18.7.14
-    "@types/react": 18.0.21
+    "@types/react": 17.0.47
   peerDependencies:
     next: ^12.1.0
     react: ^17.0.2
@@ -1684,7 +1684,7 @@ __metadata:
     "@landing/index-page": "workspace:0.0.1"
     "@types/express": ^4.17.13
     "@types/node": ^17.0.0
-    "@types/react": ^18.0.21
+    "@types/react": 17.0.47
     "@types/react-dom": ^17.0.11
     "@ui/theme": "workspace:0.0.1"
     next: ^12.1.0
@@ -2474,14 +2474,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.1":
-  version: 18.0.1
-  resolution: "@types/react@npm:18.0.1"
+"@types/react@npm:17.0.47":
+  version: 17.0.47
+  resolution: "@types/react@npm:17.0.47"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: ede927ed3766fef5fec513fe75e79180bb3c97d21ca7707321e969193c596bc4a531160238546a845e4131df02ec9be7803277a268bc270156362d16b29b4ffb
+  checksum: 2e7fe0eb630cb77da03b6da308c58728c01b38e878118e9ff5cd8045181c8d4f32dc936e328f46a62cadb56e1fe4c5a911b5113584f93a99e1f35df7f059246b
   languageName: node
   linkType: hard
 
@@ -2661,7 +2661,7 @@ __metadata:
     "@atls-ui-parts/image": ^0.0.4
     "@emotion/react": ^11.7.0
     "@emotion/styled": ^11.6.0
-    "@types/react": ^18.0.21
+    "@types/react": 17.0.47
     "@types/react-dom": ^17
     "@types/styled-system": ^5
     react: ^17.0.2

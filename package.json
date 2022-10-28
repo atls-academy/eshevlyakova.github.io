@@ -9,7 +9,7 @@
   ],
   "resolutions": {
     "@types/node": "16",
-    "@types/react": "18.0.1",
+    "@types/react": "17.0.47",
     "@types/react-dom": "17",
     "next": "12.1.0",
     "react": "17",
