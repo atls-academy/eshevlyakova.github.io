@@ -7,7 +7,7 @@ import { Box }                       from '@ui/layout'
 import { Column }                    from '@ui/layout'
 import { Layout }                    from '@ui/layout'
 import { Row }                       from '@ui/layout'
-import { Link }                      from '@ui/link'
+import { NextLink }                  from '@ui/link'
 import { Logo }                      from '@ui/logo'
 import { Text }                      from '@ui/text'
 
@@ -23,95 +23,65 @@ const HeaderBlock = () => (
           </Box>
           <Layout flexBasis={[0, 0, 241]} flexGrow={1} />
           <Box display={['none', 'none', 'flex']}>
-            <Link href='/' width={217}>
-              <Box
-                height={56}
-                alignItems='center'
-                justifyContent='center'
-                borderBottom='transparentWhite'
-              >
-                <Text
-                  fontWeight='normal'
-                  fontSize='semiRegular'
-                  lineHeight='default'
-                  color='text.white'
-                >
-                  <FormattedMessage id='landing_header.academy' defaultMessage='Academy' />
-                </Text>
-              </Box>
-            </Link>
+            <Box
+              width={217}
+              height={56}
+              alignItems='center'
+              justifyContent='center'
+              borderBottom='transparentWhite'
+            >
+              <NextLink path='/'>
+                <FormattedMessage id='landing_header.academy' defaultMessage='Academy' />
+              </NextLink>
+            </Box>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width={217}>
-              <Box
-                height={56}
-                alignItems='center'
-                justifyContent='center'
-                borderBottom='transparentWhite'
-              >
-                <Text
-                  fontWeight='normal'
-                  fontSize='semiRegular'
-                  lineHeight='default'
-                  color='text.white'
-                >
-                  <FormattedMessage id='landing_header.courses' defaultMessage='Курсы' />
-                </Text>
-              </Box>
-            </Link>
+            <Box
+              width={217}
+              height={56}
+              alignItems='center'
+              justifyContent='center'
+              borderBottom='transparentWhite'
+            >
+              <NextLink path='/'>
+                <FormattedMessage id='landing_header.courses' defaultMessage='Курсы' />
+              </NextLink>
+            </Box>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width={217}>
-              <Box
-                height={56}
-                alignItems='center'
-                justifyContent='center'
-                borderBottom='transparentWhite'
-              >
-                <Text
-                  fontWeight='normal'
-                  fontSize='semiRegular'
-                  lineHeight='default'
-                  color='text.white'
-                >
-                  <FormattedMessage id='landing_header.learning' defaultMessage='Обучение' />
-                </Text>
-              </Box>
-            </Link>
+            <Box
+              width={217}
+              height={56}
+              alignItems='center'
+              justifyContent='center'
+              borderBottom='transparentWhite'
+            >
+              <NextLink path='/'>
+                <FormattedMessage id='landing_header.learning' defaultMessage='Обучение' />
+              </NextLink>
+            </Box>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width={217}>
-              <Box
-                height={56}
-                alignItems='center'
-                justifyContent='center'
-                borderBottom='transparentWhite'
-              >
-                <Text
-                  fontWeight='normal'
-                  fontSize='semiRegular'
-                  lineHeight='default'
-                  color='text.white'
-                >
-                  <FormattedMessage id='landing_header.scholarship' defaultMessage='Стипендия' />
-                </Text>
-              </Box>
-            </Link>
+            <Box
+              width={217}
+              height={56}
+              alignItems='center'
+              justifyContent='center'
+              borderBottom='transparentWhite'
+            >
+              <NextLink path='/'>
+                <FormattedMessage id='landing_header.scholarship' defaultMessage='Стипендия' />
+              </NextLink>
+            </Box>
             <Layout flexBasis={20} flexShrink={0} />
-            <Link href='/' width={217}>
-              <Box
-                height={56}
-                alignItems='center'
-                justifyContent='center'
-                borderBottom='transparentWhite'
-              >
-                <Text
-                  fontWeight='normal'
-                  fontSize='semiRegular'
-                  lineHeight='default'
-                  color='text.white'
-                >
-                  <FormattedMessage id='landing_header.faq' defaultMessage='FAQ' />
-                </Text>
-              </Box>
-            </Link>
+            <Box
+              width={217}
+              height={56}
+              alignItems='center'
+              justifyContent='center'
+              borderBottom='transparentWhite'
+            >
+              <NextLink path='/'>
+                <FormattedMessage id='landing_header.faq' defaultMessage='FAQ' />
+              </NextLink>
+            </Box>
           </Box>
           <Box display={['none', 'flex', 'none']}>
             <Button size='normalAllCourses' variant='transparentWhite'>

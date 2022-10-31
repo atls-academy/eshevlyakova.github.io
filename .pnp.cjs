@@ -633,7 +633,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/swiper", null],\
             ["nanoid", "npm:4.0.0"],\
             ["react", "npm:17.0.2"],\
-            ["swiper", "virtual:ec1afc16272c776523e8343ef1c877ff345ca4b4a97787f106ac430a8de1b706e20bdcc06d62a7f6f10dcd594b16a9902e6414c27ab6b16a3836a6bbbeed5fdf#npm:8.4.4"]\
+            ["swiper", "virtual:4609eaf602fd1ac7ce721e1ba82dac4c913327f7491120b02c233d587020df385753b4659ec7f3b17e5542a311376e27fdf6e5f7fcb8b8c6246cc619afcc459d#npm:8.4.4"]\
           ],\
           "packagePeers": [\
             "@emotion/css",\
@@ -2964,7 +2964,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", null],\
             ["react-intl", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#npm:5.24.3"],\
             ["styled-tools", "npm:1.7.2"],\
-            ["swiper", "virtual:bfd7db0a286e0d9c046d678be7c6579450b3b3772fa4df7d79470e2c04a4f14ca09735b5237929a4c4dd2e109b59831eee2159b54da8e4da3cdc1db63fbd5b2b#npm:8.4.4"],\
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
           ],\
           "packagePeers": [\
@@ -3000,7 +2999,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:17.0.2"],\
             ["react-intl", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:5.24.3"],\
             ["styled-tools", "npm:1.7.2"],\
-            ["swiper", "virtual:ec1afc16272c776523e8343ef1c877ff345ca4b4a97787f106ac430a8de1b706e20bdcc06d62a7f6f10dcd594b16a9902e6414c27ab6b16a3836a6bbbeed5fdf#npm:8.4.4"],\
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
           ],\
           "packagePeers": [\
@@ -3030,7 +3028,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ui/text", "virtual:bfd7db0a286e0d9c046d678be7c6579450b3b3772fa4df7d79470e2c04a4f14ca09735b5237929a4c4dd2e109b59831eee2159b54da8e4da3cdc1db63fbd5b2b#workspace:ui/text"],\
             ["react-intl", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#npm:5.24.3"],\
             ["styled-tools", "npm:1.7.2"],\
-            ["swiper", "virtual:bfd7db0a286e0d9c046d678be7c6579450b3b3772fa4df7d79470e2c04a4f14ca09735b5237929a4c4dd2e109b59831eee2159b54da8e4da3cdc1db63fbd5b2b#npm:8.4.4"],\
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
@@ -5483,7 +5480,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:17.0.2"],\
             ["styled-system", "npm:5.1.5"],\
-            ["swiper", "virtual:ec1afc16272c776523e8343ef1c877ff345ca4b4a97787f106ac430a8de1b706e20bdcc06d62a7f6f10dcd594b16a9902e6414c27ab6b16a3836a6bbbeed5fdf#npm:8.4.4"]\
+            ["swiper", "virtual:4609eaf602fd1ac7ce721e1ba82dac4c913327f7491120b02c233d587020df385753b4659ec7f3b17e5542a311376e27fdf6e5f7fcb8b8c6246cc619afcc459d#npm:8.4.4"]\
           ],\
           "packagePeers": [\
             "@types/emotion__react",\
@@ -5509,7 +5506,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:17.0.2"],\
             ["styled-system", "npm:5.1.5"],\
-            ["swiper", "virtual:ec1afc16272c776523e8343ef1c877ff345ca4b4a97787f106ac430a8de1b706e20bdcc06d62a7f6f10dcd594b16a9902e6414c27ab6b16a3836a6bbbeed5fdf#npm:8.4.4"]\
+            ["swiper", "virtual:4609eaf602fd1ac7ce721e1ba82dac4c913327f7491120b02c233d587020df385753b4659ec7f3b17e5542a311376e27fdf6e5f7fcb8b8c6246cc619afcc459d#npm:8.4.4"]\
           ],\
           "packagePeers": [\
             "@types/emotion__react",\
@@ -12290,11 +12287,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.4.4", {\
-          "packageLocation": "./.yarn/unplugged/swiper-virtual-6309bc35a4/node_modules/swiper/",\
+        ["virtual:4609eaf602fd1ac7ce721e1ba82dac4c913327f7491120b02c233d587020df385753b4659ec7f3b17e5542a311376e27fdf6e5f7fcb8b8c6246cc619afcc459d#npm:8.4.4", {\
+          "packageLocation": "./.yarn/unplugged/swiper-virtual-8474866d91/node_modules/swiper/",\
           "packageDependencies": [\
-            ["swiper", "virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.4.4"],\
-            ["@types/react", null],\
+            ["swiper", "virtual:4609eaf602fd1ac7ce721e1ba82dac4c913327f7491120b02c233d587020df385753b4659ec7f3b17e5542a311376e27fdf6e5f7fcb8b8c6246cc619afcc459d#npm:8.4.4"],\
+            ["@types/react", "npm:17.0.47"],\
             ["dom7", "npm:4.0.4"],\
             ["react", "npm:17.0.2"],\
             ["ssr-window", "npm:4.0.2"]\
@@ -12305,26 +12302,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:bfd7db0a286e0d9c046d678be7c6579450b3b3772fa4df7d79470e2c04a4f14ca09735b5237929a4c4dd2e109b59831eee2159b54da8e4da3cdc1db63fbd5b2b#npm:8.4.4", {\
-          "packageLocation": "./.yarn/unplugged/swiper-virtual-a21f29d8cf/node_modules/swiper/",\
+        ["virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.4.4", {\
+          "packageLocation": "./.yarn/unplugged/swiper-virtual-6309bc35a4/node_modules/swiper/",\
           "packageDependencies": [\
-            ["swiper", "virtual:bfd7db0a286e0d9c046d678be7c6579450b3b3772fa4df7d79470e2c04a4f14ca09735b5237929a4c4dd2e109b59831eee2159b54da8e4da3cdc1db63fbd5b2b#npm:8.4.4"],\
-            ["@types/react", "npm:17.0.47"],\
-            ["dom7", "npm:4.0.4"],\
-            ["react", null],\
-            ["ssr-window", "npm:4.0.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/react",\
-            "react"\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["virtual:ec1afc16272c776523e8343ef1c877ff345ca4b4a97787f106ac430a8de1b706e20bdcc06d62a7f6f10dcd594b16a9902e6414c27ab6b16a3836a6bbbeed5fdf#npm:8.4.4", {\
-          "packageLocation": "./.yarn/unplugged/swiper-virtual-7d4bde7ac3/node_modules/swiper/",\
-          "packageDependencies": [\
-            ["swiper", "virtual:ec1afc16272c776523e8343ef1c877ff345ca4b4a97787f106ac430a8de1b706e20bdcc06d62a7f6f10dcd594b16a9902e6414c27ab6b16a3836a6bbbeed5fdf#npm:8.4.4"],\
-            ["@types/react", "npm:17.0.47"],\
+            ["swiper", "virtual:9cbb0cd5c1493987ee568c0ec037907e67b4e00f26ceae48efdce8746e2dc8a00b354dca0134842b448e3bd7e66182594f2a1c3a78b672ca022601c8dd8087c5#npm:8.4.4"],\
+            ["@types/react", null],\
             ["dom7", "npm:4.0.4"],\
             ["react", "npm:17.0.2"],\
             ["ssr-window", "npm:4.0.2"]\
