@@ -9,80 +9,72 @@ import { ifProp }              from 'styled-tools'
 
 export const fillStyles: styleFn = ifProp(prop('fill', false), { width: '100%' })
 
-const normalSocialStyles = createShapeStyles({
+const normalPaddingBigHeightStyles = createShapeStyles({
   size: 56,
   rounding: prop('theme.radii.big') as unknown as number,
   paddingLeft: 16,
   paddingRight: 16,
 })
 
-const wideSocialStyles = createShapeStyles({
+const bigPaddingNormalHeightStyles = createShapeStyles({
   size: 44,
   rounding: prop('theme.radii.big') as unknown as number,
   paddingLeft: 34,
   paddingRight: 34,
 })
 
-const transparentStyles = createShapeStyles({
+const mediumPaddingNormalHeightStyles = createShapeStyles({
   size: 48,
   rounding: prop('theme.radii.medium') as unknown as number,
   paddingLeft: 25,
   paddingRight: 25,
 })
 
-const normalAllMaterialsStyles = createShapeStyles({
+const mediumPaddingHugeHeightStyles = createShapeStyles({
   size: 72,
   rounding: prop('theme.radii.bigger') as unknown as number,
   paddingLeft: 24,
   paddingRight: 12,
 })
 
-const wideAllMaterialsStyles = createShapeStyles({
+const normalPaddingExtraHeightStyles = createShapeStyles({
   size: 56,
   rounding: prop('theme.radii.big') as unknown as number,
   paddingLeft: 16,
   paddingRight: 12,
 })
 
-const smallAllCoursesStyles = createShapeStyles({
+const smallPaddingMediumHeightStyles = createShapeStyles({
   size: 40,
   rounding: prop('theme.radii.medium') as unknown as number,
   paddingLeft: 12,
   paddingRight: 6,
 })
 
-const normalAllCoursesStyles = createShapeStyles({
+const mediumPaddingExtraHeightStyles = createShapeStyles({
   size: 56,
   rounding: prop('theme.radii.big') as unknown as number,
   paddingLeft: 20,
   paddingRight: 8,
 })
 
-const normalAdmissionProcessStyles = createShapeStyles({
+const mediumPaddingGiantHeightStyles = createShapeStyles({
   size: 80,
   rounding: prop('theme.radii.bigger') as unknown as number,
   paddingLeft: 24,
   paddingRight: 16,
 })
 
-const smallAdmissionProcessStyles = createShapeStyles({
-  size: 56,
-  rounding: prop('theme.radii.big') as unknown as number,
-  paddingLeft: 16,
-  paddingRight: 12,
-})
-
 export const baseStyles = createBaseStyles()
 export const contentStyles = createContentStyles()
 
 export const shapeStyles = switchProp(prop('size', 'normal'), {
-  normalSocial: normalSocialStyles,
-  wideSocial: wideSocialStyles,
-  transparent: transparentStyles,
-  normalAllMaterials: normalAllMaterialsStyles,
-  wideAllMaterials: wideAllMaterialsStyles,
-  smallAllCourses: smallAllCoursesStyles,
-  normalAllCourses: normalAllCoursesStyles,
-  normalAdmissionProcess: normalAdmissionProcessStyles,
-  smallAdmissionProcess: smallAdmissionProcessStyles,
+  normalPaddingBigHeight: normalPaddingBigHeightStyles,
+  bigPaddingNormalHeight: bigPaddingNormalHeightStyles,
+  mediumPaddingNormalHeight: mediumPaddingNormalHeightStyles,
+  mediumPaddingHugeHeight: mediumPaddingHugeHeightStyles,
+  normalPaddingExtraHeight: normalPaddingExtraHeightStyles,
+  smallPaddingMediumHeight: smallPaddingMediumHeightStyles,
+  mediumPaddingExtraHeight: mediumPaddingExtraHeightStyles,
+  mediumPaddingGiantHeight: mediumPaddingGiantHeightStyles,
 })

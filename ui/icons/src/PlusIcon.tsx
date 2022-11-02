@@ -5,7 +5,7 @@ import React         from 'react'
 
 import { IconProps } from '../icons.interfaces'
 
-export const WhitePlusIcon = (props: IconProps) => {
+export const PlusIcon = (props: IconProps) => {
   const theme: any = useTheme()
   return (
     <svg

@@ -16,14 +16,14 @@ const SocialLinks = () => (
       <Box flexDirection={['row', 'row', 'column']} justifyContent='space-between' height='100%'>
         <Link href='https://telegram.org/' target='_blank'>
           <Layout display={['none', 'none', 'flex']}>
-            <Button size='normalSocial' variant='transparentWhite'>
+            <Button size='normalPaddingBigHeight' variant='transparentWhite'>
               <Layout>
                 <IconTelegramIcon width={24} height={24} />
               </Layout>
             </Button>
           </Layout>
           <Layout display={['flex', 'flex', 'none']}>
-            <Button size='wideSocial' variant='transparentWhite'>
+            <Button size='bigPaddingNormalHeight' variant='transparentWhite'>
               <Layout>
                 <IconTelegramIcon width={24} height={24} />
               </Layout>
@@ -32,14 +32,14 @@ const SocialLinks = () => (
         </Link>
         <Link href='https://github.com/atls-academy' target='_blank'>
           <Layout display={['none', 'none', 'flex']}>
-            <Button size='normalSocial' variant='transparentWhite'>
+            <Button size='normalPaddingBigHeight' variant='transparentWhite'>
               <Layout>
                 <IconGithubIcon width={24} height={24} />
               </Layout>
             </Button>
           </Layout>
           <Layout display={['flex', 'flex', 'none']}>
-            <Button size='wideSocial' variant='transparentWhite'>
+            <Button size='bigPaddingNormalHeight' variant='transparentWhite'>
               <Layout>
                 <IconGithubIcon width={24} height={24} />
               </Layout>
@@ -48,14 +48,14 @@ const SocialLinks = () => (
         </Link>
         <Link href='mailto:me@atls.academy' target='_blank'>
           <Layout display={['none', 'none', 'flex']}>
-            <Button size='normalSocial' variant='transparentWhite'>
+            <Button size='normalPaddingBigHeight' variant='transparentWhite'>
               <Layout>
                 <IconEmailIcon width={24} height={24} />
               </Layout>
             </Button>
           </Layout>
           <Layout display={['flex', 'flex', 'none']}>
-            <Button size='wideSocial' variant='transparentWhite'>
+            <Button size='bigPaddingNormalHeight' variant='transparentWhite'>
               <Layout>
                 <IconEmailIcon width={24} height={24} />
               </Layout>

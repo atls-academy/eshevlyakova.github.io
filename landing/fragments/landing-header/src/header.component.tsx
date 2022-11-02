@@ -1,15 +1,15 @@
-import React                         from 'react'
-import { FormattedMessage }          from 'react-intl'
+import React                from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import { Button }                    from '@ui/button'
-import { DarkPurpleArrowBottomIcon } from '@ui/icons'
-import { Box }                       from '@ui/layout'
-import { Column }                    from '@ui/layout'
-import { Layout }                    from '@ui/layout'
-import { Row }                       from '@ui/layout'
-import { NextLink }                  from '@ui/link'
-import { Logo }                      from '@ui/logo'
-import { Text }                      from '@ui/text'
+import { Button }           from '@ui/button'
+import { ArrowBottomIcon }  from '@ui/icons'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { NextLink }         from '@ui/link'
+import { Logo }             from '@ui/logo'
+import { Text }             from '@ui/text'
 
 const HeaderBlock = () => (
   <Box>
@@ -84,7 +84,7 @@ const HeaderBlock = () => (
             </Box>
           </Box>
           <Box display={['none', 'flex', 'none']}>
-            <Button size='normalAllCourses' variant='transparentWhite'>
+            <Button size='mediumPaddingExtraHeight' variant='transparentWhite'>
               <Text fontWeight='normal' fontSize='medium' lineHeight='default' color='text.white'>
                 <FormattedMessage id='landing_section_courses.courses' defaultMessage='Курсы' />
               </Text>
@@ -97,12 +97,12 @@ const HeaderBlock = () => (
                 borderRadius='medium'
                 backgroundColor='white'
               >
-                <DarkPurpleArrowBottomIcon />
+                <ArrowBottomIcon />
               </Box>
             </Button>
           </Box>
           <Box display={['flex', 'none', 'none']}>
-            <Button size='smallAllCourses' variant='transparentWhite'>
+            <Button size='smallPaddingMediumHeight' variant='transparentWhite'>
               <Text
                 fontWeight='normal'
                 fontSize='semiMedium'
@@ -119,7 +119,7 @@ const HeaderBlock = () => (
                 borderRadius='micro'
                 backgroundColor='white'
               >
-                <DarkPurpleArrowBottomIcon />
+                <ArrowBottomIcon />
               </Box>
             </Button>
           </Box>

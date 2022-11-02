@@ -171,7 +171,7 @@ const SectionBanner = () => (
             </Text>
           </Box>
           <Box display={['none', 'none', 'flex']}>
-            <Button size='transparent' variant='borderTransparentWhite'>
+            <Button size='mediumPaddingNormalHeight' variant='borderTransparentWhite'>
               <ComputerMouseIcon width={20} height={20} />
             </Button>
           </Box>

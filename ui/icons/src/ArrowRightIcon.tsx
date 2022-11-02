@@ -5,7 +5,7 @@ import React         from 'react'
 
 import { IconProps } from '../icons.interfaces'
 
-export const DarkPurpleArrowRightIcon = (props: IconProps) => {
+export const ArrowRightIcon = (props: IconProps) => {
   const theme: any = useTheme()
   return (
     <svg

@@ -1,15 +1,14 @@
-import React                from 'react'
-import { FC }               from 'react'
-import { FormattedMessage } from 'react-intl'
+import React             from 'react'
+import { FC }            from 'react'
 
-import { Background }       from '@ui/background/src'
-import { Box }              from '@ui/layout/src'
-import { Column }           from '@ui/layout/src'
-import { Layout }           from '@ui/layout/src'
-import { Row }              from '@ui/layout/src'
-import { Text }             from '@ui/text/src'
+import { Background }    from '@ui/background/src'
+import { Box }           from '@ui/layout/src'
+import { Column }        from '@ui/layout/src'
+import { Layout }        from '@ui/layout/src'
+import { Row }           from '@ui/layout/src'
+import { Text }          from '@ui/text/src'
 
-import { CardDescProps }    from './card-desc.interface'
+import { CardDescProps } from './card-desc.interface'
 
 const CardDesc: FC<CardDescProps> = ({ category, title, description, mobileDescription }) => (
   <Box>
@@ -36,7 +35,7 @@ const CardDesc: FC<CardDescProps> = ({ category, title, description, mobileDescr
                   color='text.darkPurpleBlue'
                   textTransform='uppercase'
                 >
-                  <FormattedMessage id={category} defaultMessage='Обучение' />
+                  {category}
                 </Text>
               </Box>
               <Box flexDirection='column'>
@@ -47,7 +46,7 @@ const CardDesc: FC<CardDescProps> = ({ category, title, description, mobileDescr
                     lineHeight='extra'
                     color='text.darkPurpleBlue'
                   >
-                    <FormattedMessage id={title} defaultMessage='Заголовок' />
+                    {title}
                   </Text>
                 </Box>
                 <Layout flexBasis={[12, 16, 16]} />
@@ -58,7 +57,7 @@ const CardDesc: FC<CardDescProps> = ({ category, title, description, mobileDescr
                     lineHeight={['semiBig', 'semiBig', 'primary']}
                     color='text.transparentDarkPurpleBlue'
                   >
-                    <FormattedMessage id={description} defaultMessage='Описание' />
+                    {description}
                   </Text>
                 </Box>
                 <Box display={['flex', 'none', 'none']}>
@@ -68,7 +67,7 @@ const CardDesc: FC<CardDescProps> = ({ category, title, description, mobileDescr
                     lineHeight='semiBig'
                     color='text.transparentDarkPurpleBlue'
                   >
-                    <FormattedMessage id={mobileDescription} defaultMessage='Описание' />
+                    {mobileDescription}
                   </Text>
                 </Box>
               </Box>

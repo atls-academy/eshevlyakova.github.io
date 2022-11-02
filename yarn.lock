@@ -86,6 +86,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@atls-ui-parts/conditional-render@npm:0.0.1":
+  version: 0.0.1
+  resolution: "@atls-ui-parts/conditional-render@npm:0.0.1"
+  peerDependencies:
+    react: ^17.0.1
+  checksum: f770730caabacacd69cadf0137b44f2ef16be4e6021c431bcc313b1584adebd22652080c28fcbd502459c325de0c4409d22b4489c2dd31e96a102b70eec511a4
+  languageName: node
+  linkType: hard
+
 "@atls-ui-parts/image@npm:^0.0.4":
   version: 0.0.4
   resolution: "@atls-ui-parts/image@npm:0.0.4"
@@ -2583,11 +2592,14 @@ __metadata:
   dependencies:
     "@atls-ui-generators/button": 0.0.10
     "@atls-ui-parts/button": ^0.0.10
+    "@atls-ui-parts/conditional-render": 0.0.1
     "@atls-ui-parts/styles": ^0.0.1
     "@emotion/react": ^11.4.1
     "@emotion/styled": ^11.3.0
     "@types/styled-system": ^5
     "@ui/condition": "workspace:0.0.1"
+    "@ui/icons": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
     react: ^17.0.2

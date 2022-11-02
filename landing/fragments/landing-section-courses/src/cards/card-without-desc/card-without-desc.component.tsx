@@ -1,6 +1,5 @@
 import React                    from 'react'
 import { FC }                   from 'react'
-import { FormattedMessage }     from 'react-intl'
 
 import { Background }           from '@ui/background/src'
 import { Box }                  from '@ui/layout/src'
@@ -34,7 +33,7 @@ const CardWithoutDesc: FC<CardWithoutDescProps> = ({ category, title }) => (
                 color='text.darkPurpleBlue'
                 textTransform='uppercase'
               >
-                <FormattedMessage id={category} defaultMessage='Учебный материал' />
+                {category}
               </Text>
             </Box>
             <Box>
@@ -44,7 +43,7 @@ const CardWithoutDesc: FC<CardWithoutDescProps> = ({ category, title }) => (
                 lineHeight='extra'
                 color='text.darkPurpleBlue'
               >
-                <FormattedMessage id={title} defaultMessage='Заголовок' />
+                {title}
               </Text>
             </Box>
           </Column>

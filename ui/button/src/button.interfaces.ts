@@ -3,15 +3,14 @@ import { ButtonProps as BaseButtonProps } from '@atls-ui-parts/button'
 export type ButtonVariant = 'transparentWhite' | 'borderTransparentWhite' | 'darkPurpleBlue'
 
 export type ButtonSize =
-  | 'normalSocial'
-  | 'wideSocial'
-  | 'transparent'
-  | 'normalAllMaterials'
-  | 'wideAllMaterials'
-  | 'smallAllCourses'
-  | 'normalAllCourses'
-  | 'normalAdmissionProcess'
-  | 'smallAdmissionProcess'
+  | 'normalPaddingBigHeight'
+  | 'bigPaddingNormalHeight'
+  | 'mediumPaddingNormalHeight'
+  | 'mediumPaddingHugeHeight'
+  | 'normalPaddingExtraHeight'
+  | 'smallPaddingMediumHeight'
+  | 'mediumPaddingExtraHeight'
+  | 'mediumPaddingGiantHeight'
 
 export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
