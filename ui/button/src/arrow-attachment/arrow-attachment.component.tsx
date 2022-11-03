@@ -5,28 +5,27 @@ import React                    from 'react'
 import { FC }                   from 'react'
 import { useMemo }              from 'react'
 
-import { ArrowRightIcon }       from '@ui/icons'
 import { Box }                  from '@ui/layout'
 
-import { RightAttachmentProps } from './right-attachment.interface'
+import { ArrowAttachmentProps } from './arrow-attachment.interface'
 
-const RightAttachment: FC<RightAttachmentProps> = ({ icon }) => {
-  const Attachment = useMemo(() => styled(ConditionalRender()), [])
+const ArrowAttachment: FC<ArrowAttachmentProps> = ({ icon, iconSvg }) => {
+  const Attachment = useMemo(() => styled(ConditionalRender())(), [])
 
-  return icon === 'arrow-right' ? (
+  return icon === 'arrow' ? (
     <Attachment>
       <Box
-        width={48}
-        height={48}
+        width={[28, 32, 48]}
+        height={[28, 32, 48]}
         justifyContent='center'
         alignItems='center'
-        borderRadius='big'
+        borderRadius={['micro', 'semiMedium', 'big']}
         backgroundColor='white'
       >
-        <ArrowRightIcon />
+        {iconSvg}
       </Box>
     </Attachment>
   ) : null
 }
 
-export { RightAttachment }
+export { ArrowAttachment }

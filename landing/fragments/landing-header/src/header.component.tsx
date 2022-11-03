@@ -83,44 +83,39 @@ const HeaderBlock = () => (
               </NextLink>
             </Box>
           </Box>
-          <Box display={['none', 'flex', 'none']}>
-            <Button size='mediumPaddingExtraHeight' variant='transparentWhite'>
-              <Text fontWeight='normal' fontSize='medium' lineHeight='default' color='text.white'>
-                <FormattedMessage id='landing_section_courses.courses' defaultMessage='Курсы' />
-              </Text>
-              <Layout flexBasis={4} flexShrink={0} />
-              <Box
-                width={40}
-                height={40}
-                justifyContent='center'
-                alignItems='center'
-                borderRadius='medium'
-                backgroundColor='white'
-              >
-                <ArrowBottomIcon />
-              </Box>
+          <Box display={['none', 'flex', 'none']} width={135}>
+            <Button
+              size='mediumPaddingExtraHeight'
+              variant='transparentWhite'
+              icon='arrow'
+              iconSvg={<ArrowBottomIcon />}
+              fill
+            >
+              <Row>
+                <Text fontWeight='normal' fontSize='medium' lineHeight='default' color='text.white'>
+                  <FormattedMessage id='landing_section_courses.courses' defaultMessage='Курсы' />
+                </Text>
+              </Row>
             </Button>
           </Box>
-          <Box display={['flex', 'none', 'none']}>
-            <Button size='smallPaddingMediumHeight' variant='transparentWhite'>
-              <Text
-                fontWeight='normal'
-                fontSize='semiMedium'
-                lineHeight='default'
-                color='text.white'
-              >
-                <FormattedMessage id='landing_header.courses' defaultMessage='Курсы' />
-              </Text>
-              <Box
-                width={28}
-                height={28}
-                justifyContent='center'
-                alignItems='center'
-                borderRadius='micro'
-                backgroundColor='white'
-              >
-                <ArrowBottomIcon />
-              </Box>
+          <Box display={['flex', 'none', 'none']} width={100}>
+            <Button
+              size='smallPaddingMediumHeight'
+              variant='transparentWhite'
+              icon='arrow'
+              iconSvg={<ArrowBottomIcon />}
+              fill
+            >
+              <Row>
+                <Text
+                  fontWeight='normal'
+                  fontSize='semiMedium'
+                  lineHeight='default'
+                  color='text.white'
+                >
+                  <FormattedMessage id='landing_header.courses' defaultMessage='Курсы' />
+                </Text>
+              </Row>
             </Button>
           </Box>
         </Row>

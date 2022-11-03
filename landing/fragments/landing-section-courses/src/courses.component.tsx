@@ -23,7 +23,7 @@ const SectionCourses = () => (
     backgroundPosition={['right 33%', 'right 30%', 'right center']}
   >
     <Row justifyContent='center'>
-      <Column width={['100%', '100%', 1460]}>
+      <Column width={['100%', '100%', 1520]}>
         <Layout flexBasis={[64, 100, 160]} />
         <Box>
           <Layout flexBasis={[20, 20, 30]} flexShrink={0} />
@@ -46,7 +46,8 @@ const SectionCourses = () => (
                 <Button
                   size='mediumPaddingHugeHeight'
                   variant='darkPurpleBlue'
-                  icon='arrow-right'
+                  icon='arrow'
+                  iconSvg={<ArrowRightIcon />}
                   fill
                 >
                   <Row>
@@ -84,7 +85,13 @@ const SectionCourses = () => (
         <Box display={['flex', 'flex', 'none']}>
           <Layout flexBasis={20} flexShrink={0} />
           <Row>
-            <Button size='normalPaddingExtraHeight' variant='darkPurpleBlue' fill>
+            <Button
+              size='normalPaddingExtraHeight'
+              variant='darkPurpleBlue'
+              icon='arrow'
+              iconSvg={<ArrowRightIcon />}
+              fill
+            >
               <Row>
                 <Text
                   fontWeight='normal'
@@ -98,16 +105,6 @@ const SectionCourses = () => (
                   />
                 </Text>
               </Row>
-              <Box
-                width={32}
-                height={32}
-                justifyContent='center'
-                alignItems='center'
-                borderRadius='semiMedium'
-                backgroundColor='white'
-              >
-                <ArrowRightIcon />
-              </Box>
             </Button>
           </Row>
           <Layout flexBasis={20} flexShrink={0} />

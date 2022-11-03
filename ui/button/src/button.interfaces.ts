@@ -17,4 +17,6 @@ export interface ButtonProps extends BaseButtonProps {
   size?: ButtonSize
   active?: boolean
   ref?: any
+  icon?: string
+  iconSvg?: object
 }

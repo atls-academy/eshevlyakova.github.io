@@ -2598,7 +2598,6 @@ __metadata:
     "@emotion/styled": ^11.3.0
     "@types/styled-system": ^5
     "@ui/condition": "workspace:0.0.1"
-    "@ui/icons": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/theme": "workspace:0.0.1"
     "@ui/utils": "workspace:0.0.1"
