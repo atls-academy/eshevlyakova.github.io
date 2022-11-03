@@ -46,7 +46,6 @@ const SectionCourses = () => (
                 <Button
                   size='mediumPaddingHugeHeight'
                   variant='darkPurpleBlue'
-                  icon='arrow'
                   iconSvg={<ArrowRightIcon />}
                   fill
                 >
@@ -88,7 +87,6 @@ const SectionCourses = () => (
             <Button
               size='normalPaddingExtraHeight'
               variant='darkPurpleBlue'
-              icon='arrow'
               iconSvg={<ArrowRightIcon />}
               fill
             >

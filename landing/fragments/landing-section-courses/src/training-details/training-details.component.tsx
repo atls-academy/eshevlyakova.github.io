@@ -1,15 +1,15 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { Background }       from '@ui/background/src'
-import { Button }           from '@ui/button/src'
-import { PlusIcon }         from '@ui/icons/src'
-import { ImageBlock }       from '@ui/image/src'
-import { Box }              from '@ui/layout/src'
-import { Column }           from '@ui/layout/src'
-import { Layout }           from '@ui/layout/src'
-import { Row }              from '@ui/layout/src'
-import { Text }             from '@ui/text/src'
+import { Background }       from '@ui/background'
+import { Button }           from '@ui/button'
+import { PlusIcon }         from '@ui/icons'
+import { ImageBlock }       from '@ui/image'
+import { Box }              from '@ui/layout'
+import { Column }           from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { Text }             from '@ui/text'
 
 const TrainingDetails = () => (
   <Box height='100%' width={['100%', '100%', 440]} flexShrink={0}>

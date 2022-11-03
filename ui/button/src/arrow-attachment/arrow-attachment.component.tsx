@@ -9,10 +9,10 @@ import { Box }                  from '@ui/layout'
 
 import { ArrowAttachmentProps } from './arrow-attachment.interface'
 
-const ArrowAttachment: FC<ArrowAttachmentProps> = ({ icon, iconSvg }) => {
+const ArrowAttachment: FC<ArrowAttachmentProps> = ({ iconSvg }) => {
   const Attachment = useMemo(() => styled(ConditionalRender())(), [])
 
-  return icon === 'arrow' ? (
+  return iconSvg !== undefined ? (
     <Attachment>
       <Box
         width={[28, 32, 48]}

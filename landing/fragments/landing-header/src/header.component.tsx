@@ -87,7 +87,6 @@ const HeaderBlock = () => (
             <Button
               size='mediumPaddingExtraHeight'
               variant='transparentWhite'
-              icon='arrow'
               iconSvg={<ArrowBottomIcon />}
               fill
             >
@@ -102,7 +101,6 @@ const HeaderBlock = () => (
             <Button
               size='smallPaddingMediumHeight'
               variant='transparentWhite'
-              icon='arrow'
               iconSvg={<ArrowBottomIcon />}
               fill
             >

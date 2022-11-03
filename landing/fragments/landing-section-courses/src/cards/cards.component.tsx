@@ -1,12 +1,12 @@
 import React               from 'react'
 import { useIntl }         from 'react-intl'
 
-import { Box }             from '@ui/layout/src'
-import { Column }          from '@ui/layout/src'
-import { Layout }          from '@ui/layout/src'
-import { Row }             from '@ui/layout/src'
-import { Swiper }          from '@ui/slider/src'
-import { SwiperSlide }     from '@ui/slider/src'
+import { Box }             from '@ui/layout'
+import { Column }          from '@ui/layout'
+import { Layout }          from '@ui/layout'
+import { Row }             from '@ui/layout'
+import { Swiper }          from '@ui/slider'
+import { SwiperSlide }     from '@ui/slider'
 
 import { CardDesc }        from './card-desc'
 import { CardWithoutDesc } from './card-without-desc'

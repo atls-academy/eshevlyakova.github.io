@@ -1,11 +1,11 @@
 import React                from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import { Box }              from '@ui/layout/src'
-import { Layout }           from '@ui/layout/src'
-import { Row }              from '@ui/layout/src'
-import { Space }            from '@ui/text/src'
-import { Text }             from '@ui/text/src'
+import { Box }              from '@ui/layout'
+import { Layout }           from '@ui/layout'
+import { Row }              from '@ui/layout'
+import { Space }            from '@ui/text'
+import { Text }             from '@ui/text'
 
 const Description = () => (
   <Row justifyContent='space-between' flexDirection={['column', 'column', 'row']}>
