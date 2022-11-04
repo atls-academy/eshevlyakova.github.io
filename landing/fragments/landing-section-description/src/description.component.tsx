@@ -21,13 +21,13 @@ const SectionDescription = () => (
             <Text
               display='inline'
               fontWeight='normal'
-              fontSize={['moderate', 'semiEnlarged', 'massive']}
+              fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
               lineHeight='primary'
               color='text.white'
             >
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -55,7 +55,7 @@ const SectionDescription = () => (
               <Space />
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -84,13 +84,13 @@ const SectionDescription = () => (
             <Text
               display='inline'
               fontWeight='normal'
-              fontSize={['moderate', 'semiEnlarged', 'massive']}
+              fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
               lineHeight='primary'
               color='text.white'
             >
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -107,7 +107,7 @@ const SectionDescription = () => (
               <Space />
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -121,7 +121,7 @@ const SectionDescription = () => (
               <Space />
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -150,7 +150,12 @@ const SectionDescription = () => (
         <Layout flexBasis={[20, 20, 230]} flexShrink={5} />
       </Row>
     </Background>
-    <Background gradient='blueAndPurpleGradient' display={['flex', 'flex', 'none']}>
+    <Background
+      gradient='blueAndPurpleGradient'
+      display={['flex', 'flex', 'none']}
+      borderBottomLeftRadius='semiHuge'
+      borderBottomRightRadius='semiHuge'
+    >
       <Row justifyContent='center'>
         <Layout flexBasis={[20, 20, 230]} flexShrink={5} />
         <Column width={['100%', '100%', 1460]}>
@@ -159,13 +164,13 @@ const SectionDescription = () => (
             <Text
               display='inline'
               fontWeight='normal'
-              fontSize={['moderate', 'semiEnlarged', 'massive']}
+              fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
               lineHeight='primary'
               color='text.white'
             >
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -193,7 +198,7 @@ const SectionDescription = () => (
               <Space />
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -222,13 +227,13 @@ const SectionDescription = () => (
             <Text
               display='inline'
               fontWeight='normal'
-              fontSize={['moderate', 'semiEnlarged', 'massive']}
+              fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
               lineHeight='primary'
               color='text.white'
             >
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -245,7 +250,7 @@ const SectionDescription = () => (
               <Space />
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >
@@ -259,7 +264,7 @@ const SectionDescription = () => (
               <Space />
               <Text
                 fontWeight='normal'
-                fontSize={['moderate', 'semiEnlarged', 'massive']}
+                fontSize={['semiModerate', 'semiIncreased', 'semiBig']}
                 lineHeight='primary'
                 color='text.darkPurpleBlue'
               >

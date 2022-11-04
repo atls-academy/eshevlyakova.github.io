@@ -8,6 +8,7 @@ import { useState }         from 'react'
 
 import { useHover }         from '@ui/utils'
 
+import { ArrowAttachment }  from './arrow-attachment'
 import { ButtonProps }      from './button.interfaces'
 import { baseStyles }       from './button.styles'
 import { shapeStyles }      from './button.styles'
@@ -38,6 +39,7 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, active, ...props 
       ref={ref}
     >
       <Content divider={8}>{children}</Content>
+      <ArrowAttachment iconSvg={props.iconSvg} />
     </ButtonElement>
   )
 })

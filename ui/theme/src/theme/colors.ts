@@ -1,6 +1,6 @@
 const colors = {
   button: {
-    social: {
+    transparentWhite: {
       default: {
         background: 'rgba(255, 255, 255, 0.2)',
         font: 'rgb(255,255,255)',
@@ -22,7 +22,7 @@ const colors = {
         border: 'transparent',
       },
     },
-    transparent: {
+    borderTransparentWhite: {
       default: {
         background: 'transparent',
         font: 'rgb(255,255,255)',
@@ -44,15 +44,42 @@ const colors = {
         border: 'rgba(255, 255, 255, 0.25)',
       },
     },
+    darkPurpleBlue: {
+      default: {
+        background: 'rgb(58, 55, 93)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
+      hover: {
+        background: 'rgb(88, 83, 140)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
+      pressed: {
+        background: 'rgb(114, 108, 182)',
+        font: 'rgb(255,255,255)',
+        border: 'transparent',
+      },
+      disabled: {
+        background: 'rgba(58, 55, 93, 0.25)',
+        font: 'rgba(255,255,255, 0.5)',
+        border: 'transparent',
+      },
+    },
   },
   text: {
     white: 'rgba(255,255,255,1)',
     darkPurpleBlue: 'rgb(58, 55, 93)',
+    transparentDarkPurpleBlue: 'rgba(58, 55, 93, 0.75)',
+    lightPurpleBlue: 'rgb(77, 60, 242)',
   },
   background: {
     gray: 'rgb(97, 97, 97)',
     lightGray: 'rgba(255, 255, 255, 0.08)',
     transparentGray: 'rgba(255, 255, 255, 0.25)',
+    white: 'rgb(255, 255, 255)',
+    transparentWhite: 'rgba(255, 255, 255, 0.15)',
+    transparentDarkBlue: 'rgba(27, 26, 51, 0.15)',
   },
   input: {
     background: 'rgba(255, 255, 255, 1)',
