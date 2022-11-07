@@ -18,4 +18,7 @@ export interface ButtonProps extends BaseButtonProps {
   active?: boolean
   ref?: any
   iconSvg?: object
+  valueRadius?: object
+  valueWidth?: object
+  valueHeight?: object
 }

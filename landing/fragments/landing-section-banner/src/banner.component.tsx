@@ -80,7 +80,7 @@ const SectionBanner = () => (
                       <Space />
                     </Text>
                   </Box>
-                  <Background gradient='darkPurpleShadowGradient' radius='bigger'>
+                  <Background gradient='darkPurpleShadowGradient' borderRadius='bigger'>
                     <Box
                       borderRadius='bigger'
                       width='148px'

@@ -1,0 +1,19 @@
+{
+  "name": "@landing/process-fragment",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@landing/process-steps-fragment": "workspace:0.0.1",
+    "@ui/layout": "workspace:0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "@types/react": "18.0.21",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "next": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

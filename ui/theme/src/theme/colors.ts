@@ -80,6 +80,8 @@ const colors = {
     white: 'rgb(255, 255, 255)',
     transparentWhite: 'rgba(255, 255, 255, 0.15)',
     transparentDarkBlue: 'rgba(27, 26, 51, 0.15)',
+    charcoal: 'rgb(39, 37, 59)',
+    darkPurpleBlue: 'rgb(58, 55, 93)',
   },
   input: {
     background: 'rgba(255, 255, 255, 1)',
@@ -89,6 +91,9 @@ const colors = {
     focus: 'rgba(63,135,249,1)',
     press: 'rgba(24,97,214,1)',
     error: 'rgba(236,34,34,1)',
+  },
+  drawer: {
+    backdrop: 'rgba(0, 0, 0, 0.24)',
   },
 }
 

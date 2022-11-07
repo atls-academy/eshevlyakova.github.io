@@ -8,7 +8,6 @@ import { border }     from 'styled-system'
 const Background = styled.div(
   ({ theme, gradient, radius }) => ({
     background: gradient ? theme.backgrounds[gradient] : 'none',
-    borderRadius: radius ? theme.radii[radius] : '0',
   }),
   background,
   layout,
