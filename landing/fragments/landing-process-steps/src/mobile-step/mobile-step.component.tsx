@@ -8,9 +8,9 @@ import { Layout }       from '@ui/layout'
 import { Row }          from '@ui/layout'
 import { Text }         from '@ui/text'
 
-import { OneStepProps } from './step.interface'
+import { OneStepProps } from './mobile-step.interface'
 
-const OneStep: FC<OneStepProps> = ({ border, counter, title, description }) => (
+const MobileOneStep: FC<OneStepProps> = ({ border, counter, title, description }) => (
   <Box borderBottom={border ? 'veryTransparentWhite' : 'none'}>
     <Column width='100%'>
       <Layout flexBasis={[28, 38, 48]} />
@@ -44,7 +44,7 @@ const OneStep: FC<OneStepProps> = ({ border, counter, title, description }) => (
           <Text
             fontWeight='normal'
             fontSize={['large', 'semiIncreased', 'big']}
-            lineHeight='extra'
+            lineHeight='primary'
             color='text.white'
           >
             {title}
@@ -70,4 +70,4 @@ const OneStep: FC<OneStepProps> = ({ border, counter, title, description }) => (
   </Box>
 )
 
-export { OneStep }
+export { MobileOneStep }

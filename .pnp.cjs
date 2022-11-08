@@ -3494,6 +3494,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", null],\
             ["@types/react-intl", null],\
             ["@ui/background", "virtual:fe87c7ee4826dbb915372f99c3e96b277bbb9cecdfdac3fd48fb26bb469b007fe6f8ebbd00132daf42a4894703bf9a44da5fdb9acf93829ba9f1fbefc9486e84#workspace:ui/background"],\
+            ["@ui/divider", "virtual:4da29e69740cc17b7d2f2d46c86704443605b01f046ff78ead38f84d85cd7cb79622deebb3a55ba18ccd80db0ec25b647aedbf360d9b9c7c53719b4b48597344#workspace:ui/divider"],\
+            ["@ui/image", "workspace:ui/image"],\
             ["@ui/layout", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#workspace:ui/layout"],\
             ["@ui/text", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#workspace:ui/text"],\
             ["next", null],\
@@ -3527,6 +3529,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.17"],\
             ["@types/react-intl", null],\
             ["@ui/background", "virtual:55a67cd1c1a4c5f39cfcde199bb78b95f088cb63f5c513f75a33ad6408e2c15fd9f4bb2d02a9a2b4439d7b8b01042fcb19e4639c5c255e92772002e9ede8c31e#workspace:ui/background"],\
+            ["@ui/divider", "virtual:72aed06ca2b096d212e27bb6423b0da1a51036d3fc890c168c418d5095c6c74a36873031fead2fc022883ee16974b71440f0699e7aa061462d90a376fca211a3#workspace:ui/divider"],\
+            ["@ui/image", "workspace:ui/image"],\
             ["@ui/layout", "virtual:55a67cd1c1a4c5f39cfcde199bb78b95f088cb63f5c513f75a33ad6408e2c15fd9f4bb2d02a9a2b4439d7b8b01042fcb19e4639c5c255e92772002e9ede8c31e#workspace:ui/layout"],\
             ["@ui/text", "virtual:55a67cd1c1a4c5f39cfcde199bb78b95f088cb63f5c513f75a33ad6408e2c15fd9f4bb2d02a9a2b4439d7b8b01042fcb19e4639c5c255e92772002e9ede8c31e#workspace:ui/text"],\
             ["next", "virtual:653a57b63a7031a0376395884bb5c6d490870f863d88034cd33fbb9aa17424c3e058f3b2b1798911ce28fa465fb80eb9677a4e9b6dfd5be1268baa84ea3216bb#npm:12.1.0"],\
@@ -3556,6 +3560,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.56"],\
             ["@types/react", "npm:17.0.47"],\
             ["@ui/background", "virtual:fe87c7ee4826dbb915372f99c3e96b277bbb9cecdfdac3fd48fb26bb469b007fe6f8ebbd00132daf42a4894703bf9a44da5fdb9acf93829ba9f1fbefc9486e84#workspace:ui/background"],\
+            ["@ui/divider", "virtual:4da29e69740cc17b7d2f2d46c86704443605b01f046ff78ead38f84d85cd7cb79622deebb3a55ba18ccd80db0ec25b647aedbf360d9b9c7c53719b4b48597344#workspace:ui/divider"],\
+            ["@ui/image", "workspace:ui/image"],\
             ["@ui/layout", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#workspace:ui/layout"],\
             ["@ui/text", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#workspace:ui/text"],\
             ["react-intl", "virtual:abee025a86778e60f1149224d1c5f1f53e13e3150627c79913fe0105ada076348d9f153c31dab2f19d3e170f803bd2274bce24f1e84c9078abe9b3f55211f190#npm:5.24.3"],\

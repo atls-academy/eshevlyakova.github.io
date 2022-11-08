@@ -1712,6 +1712,8 @@ __metadata:
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
