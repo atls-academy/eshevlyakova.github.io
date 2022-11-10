@@ -6,7 +6,7 @@ import { position }   from 'styled-system'
 import { border }     from 'styled-system'
 
 const Background = styled.div(
-  ({ theme, gradient, radius }) => ({
+  ({ theme, gradient }) => ({
     background: gradient ? theme.backgrounds[gradient] : 'none',
   }),
   background,

@@ -22,7 +22,7 @@ const StepsBlock = () => (
         <Layout flexBasis={[36, 62, 114]} />
         <DesktopSteps />
         <MobileSteps />
-        <Layout flexBasis={[0, 10, 114]} />
+        <Layout flexBasis={[56, 90, 224]} />
       </Column>
       <Layout flexBasis={[20, 25, 30]} flexShrink={0} />
     </Box>

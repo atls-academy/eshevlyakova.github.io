@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "dependencies": {
+    "@landing/process-run-line-fragment": "workspace:0.0.1",
     "@landing/process-steps-fragment": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1"
   },
