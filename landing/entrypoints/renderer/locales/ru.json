@@ -61,13 +61,6 @@
   "landing_section_process.practice_of_the_studied": "Практика изученого",
   "landing_section_process.integration_into_the_project": "Интеграция в проект",
   "landing_section_process.being_a_cardinal_atlantis_has_influence": "Являясь серым кардиналом Atlantis имеет влияние на сферу IT и неограниченные.",
-  "landing_section_process.javascript": "JavaScript",
-  "landing_section_process.html": "html",
-  "landing_section_process.css": "css",
-  "landing_section_process.sass": "sass",
-  "landing_section_process.vanilla_js": "Vanilla JS",
-  "landing_section_process.jade": "Jade",
-  "landing_section_process.github": "Github",
-  "landing_section_process.atom": "atom",
-  "landing_section_process.figma": "figma"
+  "landing_section_process.skills_first_line": "JavaScript,html,css,sass,Vanilla JS,Jade",
+  "landing_section_process.skills_second_line": "Github,atom,figma"
 }

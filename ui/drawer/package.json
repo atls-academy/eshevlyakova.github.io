@@ -9,7 +9,7 @@
     "@ui/layout": "workspace:0.0.1",
     "@ui/logo": "workspace:0.0.1",
     "@ui/text": "workspace:0.0.1",
-    "framer-motion": "4.1.7",
+    "framer-motion": "7.6.2",
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
