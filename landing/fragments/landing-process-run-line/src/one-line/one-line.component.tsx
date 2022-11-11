@@ -23,24 +23,26 @@ const OneLine: FC<OneLineProps> = ({ skills, font }) => {
     []
   )
 
-  const skillsBlock: Array<JSX.Element> = []
-  skills.forEach((item) => {
-    skillsBlock.push(
-      <>
-        <Indent />
-        <Text
-          color='text.white'
-          textTransform='uppercase'
-          whiteSpace='nowrap'
-          fontWeight='thin'
-          fontSize={['big', 'semiMassive', 'huge']}
-          fontFamily={font || 'primary'}
-        >
-          {item}
-        </Text>
-      </>
-    )
-  })
+  const skillsBlock = useMemo(
+    () =>
+      skills.map((item) => (
+        <>
+          <Indent />
+          <Text
+            color='text.white'
+            textTransform='uppercase'
+            whiteSpace='nowrap'
+            fontWeight='thin'
+            fontSize={['big', 'semiMassive', 'huge']}
+            fontFamily={font || 'primary'}
+          >
+            {item}
+          </Text>
+        </>
+      )),
+    // eslint-disable-next-line
+    []
+  )
 
   return (
     <Box>
