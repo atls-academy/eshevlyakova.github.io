@@ -40,8 +40,7 @@ const OneLine: FC<OneLineProps> = ({ skills, font }) => {
           </Text>
         </>
       )),
-    // eslint-disable-next-line
-    []
+    [skills, font]
   )
 
   return (
