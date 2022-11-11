@@ -14,6 +14,12 @@ export const GlobalStyles = () => {
     <Global
       styles={css`
         @import url('http://fonts.cdnfonts.com/css/helvetica-2');
+        @font-face {
+          font-family: "Gella Display";
+          src: local("Gella Display"),
+            url("/fonts/gella-display-light.otf") format("opentype")
+        }
+
       html,
       body,
       #__next {

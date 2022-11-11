@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.ts",
   "dependencies": {
-    "framer-motion": "7.5.3"
+    "framer-motion": "7.6.2"
   },
   "devDependencies": {
     "@emotion/react": "^11.4.1",
