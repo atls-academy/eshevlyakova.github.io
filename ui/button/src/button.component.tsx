@@ -39,7 +39,12 @@ export const Button: FC<ButtonProps> = forwardRef(({ children, active, ...props 
       ref={ref}
     >
       <Content divider={8}>{children}</Content>
-      <ArrowAttachment iconSvg={props.iconSvg} />
+      <ArrowAttachment
+        iconSvg={props.iconSvg}
+        valueRadius={props.valueRadius}
+        valueWidth={props.valueWidth}
+        valueHeight={props.valueHeight}
+      />
     </ButtonElement>
   )
 })

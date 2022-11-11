@@ -47,6 +47,9 @@ const SectionCourses = () => (
                   size='mediumPaddingHugeHeight'
                   variant='darkPurpleBlue'
                   iconSvg={<ArrowRightIcon />}
+                  valueRadius={['semiMedium', 'semiMedium', 'big']}
+                  valueWidth={[32, 32, 48]}
+                  valueHeight={[32, 32, 48]}
                   fill
                 >
                   <Row>
@@ -88,6 +91,9 @@ const SectionCourses = () => (
               size='normalPaddingExtraHeight'
               variant='darkPurpleBlue'
               iconSvg={<ArrowRightIcon />}
+              valueRadius={['semiMedium', 'semiMedium', 'big']}
+              valueWidth={[32, 32, 48]}
+              valueHeight={[32, 32, 48]}
               fill
             >
               <Row>

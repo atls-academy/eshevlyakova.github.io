@@ -9,17 +9,22 @@ import { Box }                  from '@ui/layout'
 
 import { ArrowAttachmentProps } from './arrow-attachment.interface'
 
-const ArrowAttachment: FC<ArrowAttachmentProps> = ({ iconSvg }) => {
+const ArrowAttachment: FC<ArrowAttachmentProps> = ({
+  iconSvg,
+  valueRadius,
+  valueWidth,
+  valueHeight,
+}) => {
   const Attachment = useMemo(() => styled(ConditionalRender())(), [])
 
   return iconSvg !== undefined ? (
     <Attachment>
       <Box
-        width={[28, 32, 48]}
-        height={[28, 32, 48]}
+        width={valueWidth}
+        height={valueHeight}
         justifyContent='center'
         alignItems='center'
-        borderRadius={['micro', 'semiMedium', 'big']}
+        borderRadius={valueRadius}
         backgroundColor='white'
       >
         {iconSvg}

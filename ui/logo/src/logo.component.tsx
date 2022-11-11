@@ -6,22 +6,23 @@ import { NextLink }  from '@ui/link'
 import { Link }      from '@ui/link'
 
 import { Icon }      from './icon.component'
+import { LogoProps } from './logo.interfaces'
 
-const Logo: FC = () => {
+const Logo: FC<LogoProps> = ({ ...props }) => {
   const router = useRouter()
 
   if (router.route === '/') {
     return (
       // eslint-disable-next-line
       <Link href='#'>
-        <Icon />
+        <Icon color={props.color} />
       </Link>
     )
   }
 
   return (
     <NextLink path='/'>
-      <Icon />
+      <Icon color={props.color} />
     </NextLink>
   )
 }

@@ -49,5 +49,18 @@
   "landing_section_courses.we_dont_gather_large_groups": "Вы изучите фундаментальные знания в IT и прокачаете нужные для сферы навыки. Мы не собираем большие группы, что позволяет курировать работу каждого студента.",
   "landing_section_courses.five": "5",
   "landing_section_courses.students_study_in_one_practical_group": "студентов обучаются в одной практической группе",
-  "landing_section_courses.admission_process": "Процесс поступления"
+  "landing_section_courses.admission_process": "Процесс поступления",
+  "landing_section_process.steps_first": "1",
+  "landing_section_process.steps_second": "2",
+  "landing_section_process.steps_third": "3",
+  "landing_section_process.steps_fourth": "4",
+  "landing_section_process.steps_fifth": "5",
+  "landing_section_process.integration_into_the_team": "Интеграция в команду",
+  "landing_section_process.creating_an_environment": "Создание среды",
+  "landing_section_process.technology_study": "Изучение технологий",
+  "landing_section_process.practice_of_the_studied": "Практика изученого",
+  "landing_section_process.integration_into_the_project": "Интеграция в проект",
+  "landing_section_process.being_a_cardinal_atlantis_has_influence": "Являясь серым кардиналом Atlantis имеет влияние на сферу IT и неограниченные.",
+  "landing_section_process.skills_first_line": "JavaScript,html,css,sass,Vanilla JS,Jade",
+  "landing_section_process.skills_second_line": "Github,atom,figma"
 }

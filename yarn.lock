@@ -899,6 +899,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/babel-plugin@npm:^11.10.5":
+  version: 11.10.5
+  resolution: "@emotion/babel-plugin@npm:11.10.5"
+  dependencies:
+    "@babel/helper-module-imports": ^7.16.7
+    "@babel/plugin-syntax-jsx": ^7.17.12
+    "@babel/runtime": ^7.18.3
+    "@emotion/hash": ^0.9.0
+    "@emotion/memoize": ^0.8.0
+    "@emotion/serialize": ^1.1.1
+    babel-plugin-macros: ^3.1.0
+    convert-source-map: ^1.5.0
+    escape-string-regexp: ^4.0.0
+    find-root: ^1.1.0
+    source-map: ^0.5.7
+    stylis: 4.1.3
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: e3353499c76c4422d6e900c0dfab73607056d9da86161a3f27c3459c193c4908050c5d252c68fcde231e13f02a9d8e0dc07d260317ae0e5206841e331cc4caae
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^11.10.0":
   version: 11.10.3
   resolution: "@emotion/cache@npm:11.10.3"
@@ -1000,7 +1022,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.10.4, @emotion/react@npm:^11.4.1, @emotion/react@npm:^11.7.0, @emotion/react@npm:^11.7.1":
+"@emotion/react@npm:^11.10.4, @emotion/react@npm:^11.4.1":
   version: 11.10.4
   resolution: "@emotion/react@npm:11.10.4"
   dependencies:
@@ -1037,10 +1059,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/serialize@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@emotion/serialize@npm:1.1.1"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@emotion/memoize": ^0.8.0
+    "@emotion/unitless": ^0.8.0
+    "@emotion/utils": ^1.2.0
+    csstype: ^3.0.2
+  checksum: 24cfd5b16e6f2335c032ca33804a876e0442aaf8f9c94d269d23735ebd194fb1ed142542dd92191a3e6ef8bad5bd560dfc5aaf363a1b70954726dbd4dd93085c
+  languageName: node
+  linkType: hard
+
 "@emotion/sheet@npm:^1.2.0":
   version: 1.2.0
   resolution: "@emotion/sheet@npm:1.2.0"
   checksum: b3771e47963d36c179f9a1119055d7e5d18e2718e73ebe2b4b1c56f4bbf4ea6b12c50bbc52cd502f03f7981beb2fbb3fee2638b6f5ef6c5f223b06f8bf88ec7b
+  languageName: node
+  linkType: hard
+
+"@emotion/styled@npm:^11.10.0":
+  version: 11.10.5
+  resolution: "@emotion/styled@npm:11.10.5"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@emotion/babel-plugin": ^11.10.5
+    "@emotion/is-prop-valid": ^1.2.0
+    "@emotion/serialize": ^1.1.1
+    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.0
+    "@emotion/utils": ^1.2.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@emotion/react": ^11.0.0-rc.0
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 1cec5f6aeb227a7255141031e8594f38ad83902413472aae0a46c27e5f9769c01e23c1ad39adee408d8a2168a697464314d1a0c4f50b31a5d25ea506b2d7bbc8
   languageName: node
   linkType: hard
 
@@ -1631,12 +1689,15 @@ __metadata:
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/button": "workspace:0.0.1"
+    "@ui/drawer": "workspace:0.0.1"
     "@ui/icons": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
     "@ui/link": "workspace:0.0.1"
     "@ui/logo": "workspace:0.0.1"
     "@ui/text": "workspace:0.0.1"
+    framer-motion: ^7.6.2
     react-intl: ^6.1.2
+    styled-system: ^5.1.5
     styled-tools: ^1.7.2
     typescript: ^4.8.4
   peerDependencies:
@@ -1645,6 +1706,7 @@ __metadata:
     react: "*"
     react-dom: "*"
     react-intl: "*"
+    styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 
@@ -1674,6 +1736,7 @@ __metadata:
     "@landing/courses-fragment": "workspace:0.0.1"
     "@landing/description-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
+    "@landing/process-fragment": "workspace:0.0.1"
     "@types/node": ^18.7.14
     "@types/react": 18.0.21
   peerDependencies:
@@ -1683,11 +1746,76 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@landing/process-fragment@workspace:0.0.1, @landing/process-fragment@workspace:landing/fragments/landing-section-process":
+  version: 0.0.0-use.local
+  resolution: "@landing/process-fragment@workspace:landing/fragments/landing-section-process"
+  dependencies:
+    "@landing/process-run-line-fragment": "workspace:0.0.1"
+    "@landing/process-steps-fragment": "workspace:0.0.1"
+    "@types/node": ^18.7.14
+    "@types/react": 18.0.21
+    "@ui/layout": "workspace:0.0.1"
+    typescript: ^4.8.4
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/process-run-line-fragment@workspace:0.0.1, @landing/process-run-line-fragment@workspace:landing/fragments/landing-process-run-line":
+  version: 0.0.0-use.local
+  resolution: "@landing/process-run-line-fragment@workspace:landing/fragments/landing-process-run-line"
+  dependencies:
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.0
+    "@types/node": ^18.7.14
+    "@types/react": 18.0.21
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    "@ui/utils": "workspace:0.0.1"
+    react-intl: ^6.1.2
+    styled-tools: ^1.7.2
+    typescript: ^4.8.4
+  peerDependencies:
+    "@emotion/react": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
+"@landing/process-steps-fragment@workspace:0.0.1, @landing/process-steps-fragment@workspace:landing/fragments/landing-process-steps":
+  version: 0.0.0-use.local
+  resolution: "@landing/process-steps-fragment@workspace:landing/fragments/landing-process-steps"
+  dependencies:
+    "@emotion/react": ^11.10.4
+    "@types/node": ^18.7.14
+    "@types/react": 18.0.21
+    "@ui/background": "workspace:0.0.1"
+    "@ui/divider": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react-intl: ^6.1.2
+    styled-tools: ^1.7.2
+    typescript: ^4.8.4
+  peerDependencies:
+    "@emotion/react": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "@landing/renderer-entrypoint@workspace:landing/entrypoints/renderer":
   version: 0.0.0-use.local
   resolution: "@landing/renderer-entrypoint@workspace:landing/entrypoints/renderer"
   dependencies:
-    "@emotion/react": ^11.7.1
+    "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.6.0
     "@landing/index-page": "workspace:0.0.1"
     "@types/express": ^4.17.13
@@ -2533,7 +2661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-system@npm:^5, @types/styled-system@npm:^5.1.15":
+"@types/styled-system@npm:^5, @types/styled-system@npm:^5.1.12, @types/styled-system@npm:^5.1.15":
   version: 5.1.15
   resolution: "@types/styled-system@npm:5.1.15"
   dependencies:
@@ -2620,7 +2748,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.4.1
     "@emotion/styled": ^11.3.0
-    framer-motion: 7.5.3
+    framer-motion: 7.6.2
     react: ^17.0.2
   peerDependencies:
     "@emotion/react": "*"
@@ -2643,6 +2771,34 @@ __metadata:
     "@emotion/react": "*"
     "@emotion/styled": "*"
     react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ui/drawer@workspace:0.0.1, @ui/drawer@workspace:ui/drawer":
+  version: 0.0.0-use.local
+  resolution: "@ui/drawer@workspace:ui/drawer"
+  dependencies:
+    "@emotion/react": ^11.4.1
+    "@emotion/styled": ^11.3.0
+    "@types/react-dom": ^17
+    "@types/styled-system": ^5.1.12
+    "@ui/button": "workspace:0.0.1"
+    "@ui/icons": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/logo": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    framer-motion: 7.6.2
+    react: ^17.0.2
+    react-dom: 17.0.2
+    react-intl: ^6.1.2
+    styled-system: ^5.1.5
+  peerDependencies:
+    "@emotion/react": "*"
+    "@emotion/styled": "*"
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+    styled-system: "*"
   languageName: unknown
   linkType: soft
 
@@ -2669,7 +2825,7 @@ __metadata:
   resolution: "@ui/image@workspace:ui/image"
   dependencies:
     "@atls-ui-parts/image": ^0.0.4
-    "@emotion/react": ^11.7.0
+    "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.6.0
     "@types/react": 18.0.21
     "@types/react-dom": ^17
@@ -2752,7 +2908,7 @@ __metadata:
   dependencies:
     "@atls-ui-parts/swiper": ^0.0.3
     "@emotion/css": ^11.9.0
-    "@emotion/react": ^11.4.1
+    "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.3.0
     "@types/styled-system": ^5
     react: ^17.0.2
@@ -2825,6 +2981,7 @@ __metadata:
   resolution: "@ui/utils@workspace:ui/utils"
   dependencies:
     "@types/react-dom": ^17
+    "@ui/condition": "workspace:0.0.1"
     react: ^17.0.2
     react-dom: ^17.0.2
     react-laag: ^2.0.3
@@ -4863,9 +5020,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:7.5.3":
-  version: 7.5.3
-  resolution: "framer-motion@npm:7.5.3"
+"framer-motion@npm:7.6.2":
+  version: 7.6.2
+  resolution: "framer-motion@npm:7.6.2"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     "@motionone/dom": 10.13.1
@@ -4880,7 +5037,28 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 5b038ecb44e355916cef2310a1f0df7937f7e38e36b91e35a1dc0425b7717f8e5dd76b5cbf0acd38b81027ba0d8fc33d9148d901ecee7017adc76e2ae466bfea
+  checksum: 6086c8fd67c017dfbeefb03d43018cdccca2c7c9c12de593f7043a382175024984188ed101b7c9e29db11fb18b34b30cf73d459c2cf53ee3add1977429f7961f
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^7.6.2":
+  version: 7.6.5
+  resolution: "framer-motion@npm:7.6.5"
+  dependencies:
+    "@emotion/is-prop-valid": ^0.8.2
+    "@motionone/dom": 10.13.1
+    framesync: 6.1.2
+    hey-listen: ^1.0.8
+    popmotion: 11.0.5
+    style-value-types: 5.1.2
+    tslib: 2.4.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  checksum: d9a288e009c6b0a7ab8f8d8d6761da2335697468863d5eceaa2cf09ded8f016690b6c7b3fa683f9d14c9bd50dc57c0586fd5c2063d5851520f6982669ad93a65
   languageName: node
   linkType: hard
 
@@ -7162,16 +7340,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:17":
-  version: 17.0.2
-  resolution: "react-dom@npm:17.0.2"
+"react-dom@npm:18":
+  version: 18.2.0
+  resolution: "react-dom@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    scheduler: ^0.20.2
+    scheduler: ^0.23.0
   peerDependencies:
-    react: 17.0.2
-  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+    react: ^18.2.0
+  checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
   languageName: node
   linkType: hard
 
@@ -7225,13 +7402,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:17":
-  version: 17.0.2
-  resolution: "react@npm:17.0.2"
+"react@npm:18":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
   languageName: node
   linkType: hard
 
@@ -7411,13 +7587,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.20.2":
-  version: 0.20.2
-  resolution: "scheduler@npm:0.20.2"
+"scheduler@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "scheduler@npm:0.23.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
+  checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
   languageName: node
   linkType: hard
 
@@ -7834,6 +8009,13 @@ __metadata:
   version: 4.0.13
   resolution: "stylis@npm:4.0.13"
   checksum: 8ea7a87028b6383c6a982231c4b5b6150031ce028e0fdaf7b2ace82253d28a8af50cc5a9da8a421d3c7c4441592f393086e332795add672aa4a825f0fe3713a3
+  languageName: node
+  linkType: hard
+
+"stylis@npm:4.1.3":
+  version: 4.1.3
+  resolution: "stylis@npm:4.1.3"
+  checksum: d04dbffcb9bf2c5ca8d8dc09534203c75df3bf711d33973ea22038a99cc475412a350b661ebd99cbc01daa50d7eedcf0d130d121800eb7318759a197023442a6
   languageName: node
   linkType: hard
 
