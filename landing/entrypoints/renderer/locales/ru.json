@@ -62,5 +62,12 @@
   "landing_section_process.integration_into_the_project": "Интеграция в проект",
   "landing_section_process.being_a_cardinal_atlantis_has_influence": "Являясь серым кардиналом Atlantis имеет влияние на сферу IT и неограниченные.",
   "landing_section_process.skills_first_line": "JavaScript,html,css,sass,Vanilla JS,Jade",
-  "landing_section_process.skills_second_line": "Github,atom,figma"
+  "landing_section_process.skills_second_line": "Github,atom,figma",
+  "landing_section_process.process_creating": "Процесс создания",
+  "landing_section_process.any_process_stops": "Любой процесс перестаёт",
+  "landing_section_process.be": "быть",
+  "landing_section_process.difficult_when": "сложным, когда",
+  "landing_section_process.know": "знаешь",
+  "landing_section_process.how_he_flows": "как он протекает",
+  "landing_section_process.formation_of_a_system_of_basic_fragments": "Формирование системы базовых фрагментов и компонентов"
 }

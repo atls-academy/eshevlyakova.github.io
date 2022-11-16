@@ -1172,6 +1172,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@faker-js/faker@npm:7.6.0":
+  version: 7.6.0
+  resolution: "@faker-js/faker@npm:7.6.0"
+  checksum: 942af6221774e8c98a0eb6bc75265e05fb81a941170377666c3439aab9495dd321d6beedc5406f07e6ad44262b3e43c20961f666d116ad150b78e7437dd1bb2b
+  languageName: node
+  linkType: hard
+
 "@first-task/main@workspace:first-task":
   version: 0.0.0-use.local
   resolution: "@first-task/main@workspace:first-task"
@@ -1746,10 +1753,39 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@landing/process-creation-fragment@workspace:0.0.1, @landing/process-creation-fragment@workspace:landing/fragments/landing-process-creation":
+  version: 0.0.0-use.local
+  resolution: "@landing/process-creation-fragment@workspace:landing/fragments/landing-process-creation"
+  dependencies:
+    "@emotion/react": ^11.10.4
+    "@faker-js/faker": 7.6.0
+    "@types/node": ^18.7.14
+    "@types/react": 18.0.21
+    "@ui/background": "workspace:0.0.1"
+    "@ui/button": "workspace:0.0.1"
+    "@ui/icons": "workspace:0.0.1"
+    "@ui/image": "workspace:0.0.1"
+    "@ui/layout": "workspace:0.0.1"
+    "@ui/slider": "workspace:0.0.1"
+    "@ui/text": "workspace:0.0.1"
+    react-intl: ^6.1.2
+    styled-tools: ^1.7.2
+    swiper: ^8.3.1
+    typescript: ^4.8.4
+  peerDependencies:
+    "@emotion/react": "*"
+    next: "*"
+    react: "*"
+    react-dom: "*"
+    react-intl: "*"
+  languageName: unknown
+  linkType: soft
+
 "@landing/process-fragment@workspace:0.0.1, @landing/process-fragment@workspace:landing/fragments/landing-section-process":
   version: 0.0.0-use.local
   resolution: "@landing/process-fragment@workspace:landing/fragments/landing-section-process"
   dependencies:
+    "@landing/process-creation-fragment": "workspace:0.0.1"
     "@landing/process-run-line-fragment": "workspace:0.0.1"
     "@landing/process-steps-fragment": "workspace:0.0.1"
     "@types/node": ^18.7.14
@@ -8070,7 +8106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swiper@npm:^8.4.3":
+"swiper@npm:^8.3.1, swiper@npm:^8.4.3":
   version: 8.4.4
   resolution: "swiper@npm:8.4.4"
   dependencies:

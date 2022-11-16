@@ -65,6 +65,13 @@ const mediumPaddingGiantHeightStyles = createShapeStyles({
   paddingRight: 16,
 })
 
+const smallPaddingMassiveHeightStyles = createShapeStyles({
+  size: 64,
+  rounding: prop('theme.radii.medium') as unknown as number,
+  paddingLeft: 16,
+  paddingRight: 16,
+})
+
 export const baseStyles = createBaseStyles()
 export const contentStyles = createContentStyles()
 
@@ -77,4 +84,5 @@ export const shapeStyles = switchProp(prop('size', 'normal'), {
   smallPaddingMediumHeight: smallPaddingMediumHeightStyles,
   mediumPaddingExtraHeight: mediumPaddingExtraHeightStyles,
   mediumPaddingGiantHeight: mediumPaddingGiantHeightStyles,
+  smallPaddingMassiveHeight: smallPaddingMassiveHeightStyles,
 })

@@ -11,6 +11,7 @@ export type ButtonSize =
   | 'smallPaddingMediumHeight'
   | 'mediumPaddingExtraHeight'
   | 'mediumPaddingGiantHeight'
+  | 'smallPaddingMassiveHeight'
 
 export interface ButtonProps extends BaseButtonProps {
   variant?: ButtonVariant
