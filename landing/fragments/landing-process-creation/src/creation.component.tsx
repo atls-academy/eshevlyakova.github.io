@@ -19,6 +19,7 @@ const CreationBlock = () => (
     backgroundPosition='right center'
   >
     <Box justifyContent='center'>
+      <Layout flexBasis={[20, 25, 0]} flexShrink={0} />
       <Column width={['100%', '100%', 960]} alignItems='center'>
         <Layout flexBasis={[56, 140, 224]} />
         <Box>
@@ -83,6 +84,7 @@ const CreationBlock = () => (
         <SliderBlock />
         <Layout flexBasis={[59, 110, 160]} />
       </Column>
+      <Layout flexBasis={[20, 25, 0]} flexShrink={0} />
     </Box>
   </Background>
 )

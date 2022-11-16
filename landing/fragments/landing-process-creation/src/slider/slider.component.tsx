@@ -34,7 +34,7 @@ const SliderBlock = () => {
 
   return (
     <Column alignItems='center'>
-      <Box width={['100%', '100%', 960]}>
+      <Box width={[335, 660, 960]}>
         <Swiper
           slidesPerView={1}
           allowTouchMove={false}
@@ -66,7 +66,7 @@ const SliderBlock = () => {
           </Button>
         </Box>
         <Box
-          width={['100%', '100%', 830]}
+          width={[230, 530, 830]}
           borderRadius='medium'
           border='veryTransparentWhite'
           overflow='hidden'
