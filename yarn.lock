@@ -1618,8 +1618,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/banner-fragment@workspace:landing/fragments/landing-section-banner"
   dependencies:
-    "@emotion/react": ^11.10.4
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
@@ -1630,12 +1628,8 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
     styled-tools: ^1.7.2
-    typescript: ^4.8.4
   peerDependencies:
-    "@emotion/react": "*"
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1644,7 +1638,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/courses-fragment@workspace:landing/fragments/landing-section-courses"
   dependencies:
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
@@ -1656,11 +1649,8 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
     styled-tools: ^1.7.2
-    typescript: ^4.8.4
   peerDependencies:
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1669,8 +1659,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/description-fragment@workspace:landing/fragments/landing-section-description"
   dependencies:
-    "@emotion/react": ^11.10.4
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
     "@ui/image": "workspace:0.0.1"
@@ -1678,12 +1666,8 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
     styled-tools: ^1.7.2
-    typescript: ^4.8.4
   peerDependencies:
-    "@emotion/react": "*"
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1692,8 +1676,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/header-fragment@workspace:landing/fragments/landing-header"
   dependencies:
-    "@emotion/react": ^11.10.4
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/button": "workspace:0.0.1"
     "@ui/drawer": "workspace:0.0.1"
@@ -1706,14 +1688,9 @@ __metadata:
     react-intl: ^6.1.2
     styled-system: ^5.1.5
     styled-tools: ^1.7.2
-    typescript: ^4.8.4
   peerDependencies:
-    "@emotion/react": "*"
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
-    styled-system: ^5.1.5
   languageName: unknown
   linkType: soft
 
@@ -1721,17 +1698,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/hero-fragment@workspace:landing/fragments/landing-hero"
   dependencies:
-    "@emotion/react": ^11.10.4
     "@landing/banner-fragment": 0.0.1
     "@landing/header-fragment": 0.0.1
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
   peerDependencies:
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1744,12 +1717,12 @@ __metadata:
     "@landing/description-fragment": "workspace:0.0.1"
     "@landing/hero-fragment": "workspace:0.0.1"
     "@landing/process-fragment": "workspace:0.0.1"
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
   peerDependencies:
     next: ^12.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 
@@ -1760,7 +1733,6 @@ __metadata:
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.6.0
     "@faker-js/faker": 7.6.0
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
     "@ui/button": "workspace:0.0.1"
@@ -1772,12 +1744,8 @@ __metadata:
     react-intl: ^6.1.2
     styled-tools: ^1.7.2
     swiper: ^8.3.1
-    typescript: ^4.8.4
   peerDependencies:
-    "@emotion/react": "*"
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1789,14 +1757,11 @@ __metadata:
     "@landing/process-creation-fragment": "workspace:0.0.1"
     "@landing/process-run-line-fragment": "workspace:0.0.1"
     "@landing/process-steps-fragment": "workspace:0.0.1"
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/layout": "workspace:0.0.1"
-    typescript: ^4.8.4
   peerDependencies:
-    next: "*"
     react: "*"
-    react-dom: "*"
+    react-intl: "*"
   languageName: unknown
   linkType: soft
 
@@ -1806,7 +1771,6 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.0
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/divider": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -1814,12 +1778,8 @@ __metadata:
     "@ui/utils": "workspace:0.0.1"
     react-intl: ^6.1.2
     styled-tools: ^1.7.2
-    typescript: ^4.8.4
   peerDependencies:
-    "@emotion/react": "*"
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft
@@ -1828,8 +1788,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@landing/process-steps-fragment@workspace:landing/fragments/landing-process-steps"
   dependencies:
-    "@emotion/react": ^11.10.4
-    "@types/node": ^18.7.14
     "@types/react": 18.0.21
     "@ui/background": "workspace:0.0.1"
     "@ui/divider": "workspace:0.0.1"
@@ -1838,12 +1796,8 @@ __metadata:
     "@ui/text": "workspace:0.0.1"
     react-intl: ^6.1.2
     styled-tools: ^1.7.2
-    typescript: ^4.8.4
   peerDependencies:
-    "@emotion/react": "*"
-    next: "*"
     react: "*"
-    react-dom: "*"
     react-intl: "*"
   languageName: unknown
   linkType: soft

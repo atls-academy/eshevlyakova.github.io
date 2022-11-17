@@ -1,24 +1,25 @@
-import { faker }                from '@faker-js/faker'
+import { faker }                  from '@faker-js/faker'
 
-import React                    from 'react'
-import { Swiper as SwiperCore } from 'swiper'
-import { Pagination }           from 'swiper'
-import { useState }             from 'react'
-import { useIntl }              from 'react-intl'
+import React                      from 'react'
+import { Swiper as SwiperCore }   from 'swiper'
+import { Pagination }             from 'swiper'
+import { useEffect }              from 'react'
+import { useState }               from 'react'
+import { useIntl }                from 'react-intl'
 
-import { Button }               from '@ui/button'
-import { ArrowLeftIcon }        from '@ui/icons'
-import { ArrowRightIcon }       from '@ui/icons'
-import { Row }                  from '@ui/layout'
-import { Box }                  from '@ui/layout'
-import { Layout }               from '@ui/layout'
-import { Column }               from '@ui/layout'
-import { Swiper }               from '@ui/slider'
-import { SwiperSlide }          from '@ui/slider'
-import { useSwiper }            from '@ui/slider'
+import { Button }                 from '@ui/button'
+import { ArrowLeftIcon }          from '@ui/icons'
+import { ArrowRightIcon }         from '@ui/icons'
+import { Row }                    from '@ui/layout'
+import { Box }                    from '@ui/layout'
+import { Layout }                 from '@ui/layout'
+import { Column }                 from '@ui/layout'
+import { Swiper }                 from '@ui/slider'
+import { SwiperSlide }            from '@ui/slider'
+import { SwiperInstanceExporter } from '@ui/slider'
 
-import { SlideImage }           from './slide-image'
-import { SlideText }            from './slide-text'
+import { SlideImage }             from './slide-image'
+import { SlideText }              from './slide-text'
 
 const SliderBlock = () => {
   const { formatMessage } = useIntl()
@@ -26,10 +27,17 @@ const SliderBlock = () => {
   const [imgSwiper, setImgSwiper] = useState<SwiperCore | null>(null)
   const [textSwiper, setTextSwiper] = useState<SwiperCore | null>(null)
 
-  const SliderControlsExporter = ({ swiper, setSwiper }) => {
-    const swiperInstance = useSwiper()
-    if (!swiper) setSwiper(swiperInstance)
-    return null
+  const useSlides = (path) => {
+    const [content, setContent] = useState('')
+
+    useEffect(
+      () => {
+        setContent(path)
+      }, // eslint-disable-next-line
+      []
+    )
+
+    return content
   }
 
   return (
@@ -42,7 +50,7 @@ const SliderBlock = () => {
           onSlidePrevTransitionStart={() => textSwiper?.slidePrev()}
           loop
         >
-          <SliderControlsExporter swiper={imgSwiper} setSwiper={setImgSwiper} />
+          <SwiperInstanceExporter swiper={imgSwiper} setSwiper={setImgSwiper} />
           <SwiperSlide>
             <SlideImage
               srcImage='/img-1-slider-section-4.png'
@@ -50,7 +58,10 @@ const SliderBlock = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <SlideImage srcImage={faker.image.cats()} srcMobileImage={faker.image.cats()} />
+            <SlideImage
+              srcImage={useSlides(faker.image.cats())}
+              srcMobileImage={useSlides(faker.image.cats())}
+            />
           </SwiperSlide>
         </Swiper>
       </Box>
@@ -79,7 +90,7 @@ const SliderBlock = () => {
             touchEventsTarget='container'
             loop
           >
-            <SliderControlsExporter swiper={textSwiper} setSwiper={setTextSwiper} />
+            <SwiperInstanceExporter swiper={textSwiper} setSwiper={setTextSwiper} />
             <SwiperSlide>
               <SlideText
                 text={formatMessage({
@@ -89,7 +100,7 @@ const SliderBlock = () => {
               />
             </SwiperSlide>
             <SwiperSlide>
-              <SlideText text={faker.lorem.words()} />
+              <SlideText text={useSlides(faker.lorem.words())} />
             </SwiperSlide>
           </Swiper>
         </Box>
