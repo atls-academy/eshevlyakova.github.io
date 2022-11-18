@@ -26,6 +26,9 @@ const SliderBlock = () => {
   const [imgSwiper, setImgSwiper] = useState<SwiperCore | null>(null)
   const [textSwiper, setTextSwiper] = useState<SwiperCore | null>(null)
 
+  const image = useImage()
+  const text = useText()
+
   return (
     <Column alignItems='center'>
       <Box width={[335, 660, 960]}>
@@ -44,7 +47,7 @@ const SliderBlock = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <SlideImage srcImage={useImage()} srcMobileImage={useImage()} />
+            <SlideImage srcImage={image} srcMobileImage={image} />
           </SwiperSlide>
         </Swiper>
       </Box>
@@ -83,7 +86,7 @@ const SliderBlock = () => {
               />
             </SwiperSlide>
             <SwiperSlide>
-              <SlideText text={useText()} />
+              <SlideText text={text} />
             </SwiperSlide>
           </Swiper>
         </Box>
