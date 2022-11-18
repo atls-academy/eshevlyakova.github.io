@@ -1,9 +1,6 @@
-import { faker }                  from '@faker-js/faker'
-
 import React                      from 'react'
 import { Swiper as SwiperCore }   from 'swiper'
 import { Pagination }             from 'swiper'
-import { useEffect }              from 'react'
 import { useState }               from 'react'
 import { useIntl }                from 'react-intl'
 
@@ -20,25 +17,14 @@ import { SwiperInstanceExporter } from '@ui/slider'
 
 import { SlideImage }             from './slide-image'
 import { SlideText }              from './slide-text'
+import { useImage }               from './use-image.hook'
+import { useText }                from './use-text.hook'
 
 const SliderBlock = () => {
   const { formatMessage } = useIntl()
 
   const [imgSwiper, setImgSwiper] = useState<SwiperCore | null>(null)
   const [textSwiper, setTextSwiper] = useState<SwiperCore | null>(null)
-
-  const useSlides = (path) => {
-    const [content, setContent] = useState('')
-
-    useEffect(
-      () => {
-        setContent(path)
-      }, // eslint-disable-next-line
-      []
-    )
-
-    return content
-  }
 
   return (
     <Column alignItems='center'>
@@ -58,10 +44,7 @@ const SliderBlock = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <SlideImage
-              srcImage={useSlides(faker.image.cats())}
-              srcMobileImage={useSlides(faker.image.cats())}
-            />
+            <SlideImage srcImage={useImage()} srcMobileImage={useImage()} />
           </SwiperSlide>
         </Swiper>
       </Box>
@@ -100,7 +83,7 @@ const SliderBlock = () => {
               />
             </SwiperSlide>
             <SwiperSlide>
-              <SlideText text={useSlides(faker.lorem.words())} />
+              <SlideText text={useText()} />
             </SwiperSlide>
           </Swiper>
         </Box>
