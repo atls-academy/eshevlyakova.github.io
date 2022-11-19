@@ -12,7 +12,12 @@ import { Space }            from '@ui/text'
 
 const SectionDescription = () => (
   <>
-    <Background gradient='darkPurpleAndPurpleGradient' display={['none', 'none', 'flex']}>
+    <Background
+      gradient='darkPurpleAndPurpleGradient'
+      display={['none', 'none', 'flex']}
+      borderBottomLeftRadius='semiGiant'
+      borderBottomRightRadius='semiGiant'
+    >
       <Row justifyContent='center'>
         <Layout flexBasis={[20, 20, 230]} flexShrink={5} />
         <Column width={['100%', '100%', 1460]}>

@@ -72,6 +72,7 @@ const colors = {
     darkPurpleBlue: 'rgb(58, 55, 93)',
     transparentDarkPurpleBlue: 'rgba(58, 55, 93, 0.75)',
     lightPurpleBlue: 'rgb(77, 60, 242)',
+    transparentWhite: 'rgba(255, 255, 255, 0.5)',
   },
   background: {
     gray: 'rgb(97, 97, 97)',

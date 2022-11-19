@@ -1,19 +1,21 @@
-import React            from 'react'
+import React             from 'react'
 
-import { RunLineBlock } from '@landing/process-run-line-fragment'
-import { StepsBlock }   from '@landing/process-steps-fragment'
-import { Box }          from '@ui/layout'
-import { Column }       from '@ui/layout'
+import { CreationBlock } from '@landing/process-creation-fragment'
+import { RunLineBlock }  from '@landing/process-run-line-fragment'
+import { StepsBlock }    from '@landing/process-steps-fragment'
+import { Box }           from '@ui/layout'
+import { Column }        from '@ui/layout'
 
 const SectionProcess = () => (
   <Box
     backgroundColor='background.charcoal'
-    borderTopLeftRadius={['bigger', 'semiHuge', 0]}
-    borderTopRightRadius={['bigger', 'semiHuge', 0]}
+    borderTopLeftRadius={['bigger', 'semiHuge', 'semiGiant']}
+    borderTopRightRadius={['bigger', 'semiHuge', 'semiGiant']}
   >
     <Column width='100%'>
       <StepsBlock />
       <RunLineBlock />
+      <CreationBlock />
     </Column>
   </Box>
 )

@@ -9,14 +9,10 @@
     "@ui/layout": "workspace:0.0.1"
   },
   "devDependencies": {
-    "@emotion/react": "^11.10.4",
-    "@types/node": "^18.7.14",
     "@types/react": "18.0.21"
   },
   "peerDependencies": {
-    "next": "*",
     "react": "*",
-    "react-dom": "*",
     "react-intl": "*"
   }
 }
